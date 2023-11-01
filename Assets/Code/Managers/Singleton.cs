@@ -8,9 +8,11 @@ public class Singleton : MonoBehaviour
     
     public static Singleton Instance { get; private set; }
     public DialogueManager DialogueManager { get => _dialogueManager; set => _dialogueManager = null; }
+    public GameManager GameManager { get => _gameManager; set => _gameManager = null; }
 
     [SerializeField] private DialogueManager _dialogueManager;
-    
+    [SerializeField] private GameManager _gameManager;
+
     private void OnEnable()
     {
         SceneManager.sceneLoaded += LoadSingletones;
@@ -35,6 +37,7 @@ public class Singleton : MonoBehaviour
     private void LoadSingletones(Scene scene, LoadSceneMode mode)
     {
         _dialogueManager = FindObjectOfType<DialogueManager>();
+        _gameManager = FindObjectOfType<GameManager>();
 
     }
 }

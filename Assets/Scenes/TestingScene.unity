@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 81524198}
   m_Layer: 0
   m_Name: DialogueManager
-  m_TagString: DialogueManager
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1484,6 +1484,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dialogueManager: {fileID: 81524198}
+  _gameManager: {fileID: 0}
 --- !u!224 &1430117807 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8728624407938653482, guid: 43b93f5bf56597f489ca912691e5b4a3, type: 3}
