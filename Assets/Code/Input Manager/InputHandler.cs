@@ -32,6 +32,7 @@ public class InputHandler : MonoBehaviour
         if (!rayHit.collider) return;
 
         if (!rayHit.collider.GetComponent<Item>()) return;
+        if (GameManager.Instance.state == GameManager.GameState.Dialogue) return;
         var x = rayHit.collider.gameObject.GetComponent<Item>();
         x.ShowDescription();
         x.ShowOutline(false);

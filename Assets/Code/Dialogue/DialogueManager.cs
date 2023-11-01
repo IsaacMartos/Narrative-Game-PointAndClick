@@ -1,8 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEditor.Build.Content;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -30,6 +32,7 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue (Dialogue dialogue)
     {
+        GameManager.Instance.UpdateGameState(GameManager.GameState.Dialogue);
         //Play animation "Dialogue box appears"
         animator.SetBool("IsOpen",true);
 
@@ -42,7 +45,7 @@ public class DialogueManager : MonoBehaviour
         C2name = dialogue.C2name;
         nameText.text = C1name;
 
-        //Change color to destacar character 1
+        //Change color to highlight character 1
         Character1Image.color = new Color32(250, 250, 250, 250);
         Character2Image.color = new Color32(100, 100, 100, 250);
 
@@ -107,6 +110,7 @@ public class DialogueManager : MonoBehaviour
     //Animation "hiding text box"
     public void EndDialogue( )
     {
+        GameManager.Instance.UpdateGameState(GameManager.GameState.Playing);
         animator.SetBool("IsOpen", false);
     }
 }
