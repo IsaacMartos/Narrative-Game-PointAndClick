@@ -20,12 +20,10 @@ public class Item : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Enter");
         ShowOutline(true);
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        Debug.Log("Exit");
         ShowOutline(false);
     }
 }
