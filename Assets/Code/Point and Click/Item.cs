@@ -20,13 +20,13 @@ public class Item : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag != "Pointer") return;
+        if (!collision.CompareTag("Pointer")) return;
         if (GameManager.Instance.state == GameManager.GameState.Dialogue) return;
         ShowOutline(true);
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.tag != "Pointer") return;
+        if (!collision.CompareTag("Pointer")) return;
         ShowOutline(false);
     }
 }
