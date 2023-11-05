@@ -1,28 +1,47 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-    
-    public float speed = 10;
-    
-    // Update is called once per frame
-    void Update()
+    private PlayerInput playerInput = null;
+    private Vector2 moveVector = Vector2.zero;
+    private Rigidbody2D rb;
+    public float speed = 100;
+
+    private void Awake()
     {
-        OnPlayerMovement();
+        playerInput = new PlayerInput();
+        rb = GetComponent<Rigidbody2D>();
+    }
+    private void OnEnable()
+    {
+        playerInput.Enable();
+        playerInput.Gameplay.Move.performed += OnMovementPerformed;
+        playerInput.Gameplay.Move.canceled += OnMovementCancelled;
+
+    }
+    private void OnDisable()
+    {
+        playerInput.Disable();
+        playerInput.Gameplay.Move.performed -= OnMovementPerformed;
+        playerInput.Gameplay.Move.canceled -= OnMovementCancelled;
+        
+    }
+    private void FixedUpdate()
+    {
+        rb.velocity = moveVector * speed * Time.deltaTime;
     }
 
-    void OnPlayerMovement()
+    private void OnMovementPerformed(InputAction.CallbackContext context)
     {
-        if (GameManager.Instance.state == GameManager.GameState.Dialogue) return;
-        if (Input.GetKey(KeyCode.A))
-        {
-            transform.position += new Vector3(-1, 0, 0) * (speed * Time.deltaTime);
-        }
-        if (Input.GetKey(KeyCode.D))
-        {
-            transform.position += new Vector3(1, 0, 0) * (speed * Time.deltaTime);
-        }
+       // if(GameManager.Instance.state == GameManager.GameState.Dialogue) return;
+        moveVector = context.ReadValue<Vector2>();
+    }
+    private void OnMovementCancelled(InputAction.CallbackContext context)
+    {
+       // if (GameManager.Instance.state == GameManager.GameState.Dialogue) return;
+        moveVector = Vector2.zero;
     }
 }

@@ -9,11 +9,28 @@ using UnityEngine.InputSystem;
 public class InputHandler : MonoBehaviour
 {
     private Camera _mainCamera;
-    public GameObject Pointer;
+    GameObject pointer;
+    GameObject player;
+    private bool interactionPressed = false;
+
+    private static InputHandler instance;
 
     private void Awake()
     {
+        if (instance != null)
+        {
+            Debug.LogWarning("More than one Input manager on this scene");
+        }
+        instance = this;
+
         _mainCamera = Camera.main;
+        pointer = GameObject.FindGameObjectWithTag("Pointer");
+        player = GameObject.FindGameObjectWithTag("Player");
+    }
+
+    public static InputHandler GetInstance()
+    {
+        return instance;
     }
 
     void Update()
@@ -21,7 +38,7 @@ public class InputHandler : MonoBehaviour
         //pointer to mouse position
         var mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mouseWorldPos.z = 0f;
-        Pointer.transform.position = mouseWorldPos;
+        pointer.transform.position = mouseWorldPos;
     }
 
     public void OnClick(InputAction.CallbackContext context)
@@ -37,5 +54,18 @@ public class InputHandler : MonoBehaviour
         x.ShowDescription();
         x.ShowOutline(false);
     }
+
+    public void OnInteract(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            interactionPressed = true;
+        }
+        else if (context.canceled)
+        {
+            interactionPressed = false;
+        }
+    }
+
     
 }
