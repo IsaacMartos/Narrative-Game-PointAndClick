@@ -9,16 +9,18 @@ public class InkDialogueTrigger : MonoBehaviour
     bool CanTalk;
 
     [SerializeField] TextAsset inkJSON;
+    private InputController _inputController;
 
     private void Awake()
     {
         CanBeInteracted(false);
+        _inputController = FindObjectOfType<InputController>();
     }
 
     void Update()
     {
         //Cambiar a input nuevo
-     if (Input.GetKeyDown(KeyCode.E) && CanTalk && !InkDialogueManager.GetInstance().dialogueIsPlaying)
+     if (_inputController.interact && CanTalk && !InkDialogueManager.GetInstance().dialogueIsPlaying)
         {
             InkDialogueManager.GetInstance().EnterDialogueMode(inkJSON);
             CanBeInteracted(false);
@@ -26,13 +28,13 @@ public class InkDialogueTrigger : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag != "Player") return;
+        if (!collision.CompareTag("Player")) return;
         CanBeInteracted(true);
 
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.tag != "Player") return;
+        if (!collision.CompareTag("Player")) return;
         CanBeInteracted(false);
 
     }

@@ -9,11 +9,12 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 moveVector = Vector2.zero;
     private Rigidbody2D rb;
     public float speed = 100;
-
+    [HideInInspector] public bool canMove;
     private void Awake()
     {
         playerInput = new PlayerInput();
         rb = GetComponent<Rigidbody2D>();
+        canMove = true;
     }
     private void OnEnable()
     {
@@ -36,12 +37,14 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnMovementPerformed(InputAction.CallbackContext context)
     {
-       // if(GameManager.Instance.state == GameManager.GameState.Dialogue) return;
+        // if(GameManager.Instance.state == GameManager.GameState.Dialogue) return;
         moveVector = context.ReadValue<Vector2>();
     }
     private void OnMovementCancelled(InputAction.CallbackContext context)
     {
-       // if (GameManager.Instance.state == GameManager.GameState.Dialogue) return;
+        // if (GameManager.Instance.state == GameManager.GameState.Dialogue) return;
         moveVector = Vector2.zero;
     }
+
+    
 }

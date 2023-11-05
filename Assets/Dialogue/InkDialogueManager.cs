@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using Ink.Runtime;
 using UnityEngine.EventSystems;
+using UnityEngine.InputSystem;
 
 public class InkDialogueManager : MonoBehaviour
 {
@@ -26,6 +27,9 @@ public class InkDialogueManager : MonoBehaviour
     private const string SPEAKER_TAG = "speaker";
     private const string PORTRAIT_TAG = "portrait";
 
+    private InputController _inputController;
+    [SerializeField] private DefinitivePlayerMovement _playerMovement;
+
     private void Awake()
     {
         if (instance != null)
@@ -33,6 +37,8 @@ public class InkDialogueManager : MonoBehaviour
             Debug.LogWarning("More than one Dialogue manager on this scene");
         }
         instance = this;
+
+        _inputController = FindObjectOfType<InputController>();
     }
     public static InkDialogueManager GetInstance()
     {
@@ -52,10 +58,12 @@ public class InkDialogueManager : MonoBehaviour
         if (!dialogueIsPlaying) return;
 
         // Cambiar a input nuevo
-        if (Input.GetKeyDown(KeyCode.E))
+        if (_inputController.interact)
         {
-            ContinueStory();
+            _inputController.AddInteractFunction(ContinueStory);
+            //ContinueStory();
         }
+
     }
 
     public void EnterDialogueMode(TextAsset inkJSON)
@@ -64,8 +72,9 @@ public class InkDialogueManager : MonoBehaviour
         animator.SetBool("IsOpen", true);
         currnetStory = new Story(inkJSON.text);
         dialogueIsPlaying = true;
+        _playerMovement.canMove = false;
 
-        ContinueStory();
+        _inputController.AddInteractFunction(ContinueStory);
     }
     private void ExitDialogueMode()
     {
@@ -73,8 +82,10 @@ public class InkDialogueManager : MonoBehaviour
         dialogueIsPlaying = false;
         dialogueText.text = "";
         GameManager.Instance.UpdateGameState(GameManager.GameState.Playing);
+        _inputController.RemoveInteractFunction(ContinueStory);
+        _playerMovement.canMove = true;
     }
-    private void ContinueStory()
+    private void ContinueStory(InputAction.CallbackContext ctx)
     {
         if (!currnetStory.canContinue)
         {
