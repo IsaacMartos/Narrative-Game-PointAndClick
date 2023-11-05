@@ -17,6 +17,7 @@ public class InkDialogueTrigger : MonoBehaviour
 
     void Update()
     {
+        //Cambiar a input nuevo
      if (Input.GetKeyDown(KeyCode.E) && CanTalk && !InkDialogueManager.GetInstance().dialogueIsPlaying)
         {
             InkDialogueManager.GetInstance().EnterDialogueMode(inkJSON);

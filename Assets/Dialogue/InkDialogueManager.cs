@@ -51,6 +51,7 @@ public class InkDialogueManager : MonoBehaviour
     {
         if (!dialogueIsPlaying) return;
 
+        // Cambiar a input nuevo
         if (Input.GetKeyDown(KeyCode.E))
         {
             ContinueStory();

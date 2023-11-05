@@ -7,10 +7,10 @@ public class Singleton : MonoBehaviour
 {
     
     public static Singleton Instance { get; private set; }
-    public DialogueManager DialogueManager { get => _dialogueManager; set => _dialogueManager = null; }
+    public InkDialogueManager DialogueManager { get => _dialogueManager; set => _dialogueManager = null; }
     public GameManager GameManager { get => _gameManager; set => _gameManager = null; }
 
-    [SerializeField] private DialogueManager _dialogueManager;
+    [SerializeField] private InkDialogueManager _dialogueManager;
     [SerializeField] private GameManager _gameManager;
 
     private void OnEnable()
@@ -36,7 +36,7 @@ public class Singleton : MonoBehaviour
 
     private void LoadSingletones(Scene scene, LoadSceneMode mode)
     {
-        _dialogueManager = FindObjectOfType<DialogueManager>();
+        _dialogueManager = FindObjectOfType<InkDialogueManager>();
         _gameManager = FindObjectOfType<GameManager>();
 
     }
