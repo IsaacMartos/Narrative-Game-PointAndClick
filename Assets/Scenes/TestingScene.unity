@@ -351,7 +351,7 @@ MonoBehaviour:
   m_XRTrackingOrigin: {fileID: 0}
   m_ActionsAsset: {fileID: -944628639613478452, guid: 883884dd8973f204aa1684eab448f31f, type: 3}
   m_PointAction: {fileID: 0}
-  m_MoveAction: {fileID: 0}
+  m_MoveAction: {fileID: 1526118685552388643, guid: 883884dd8973f204aa1684eab448f31f, type: 3}
   m_SubmitAction: {fileID: -1051835286833350014, guid: 883884dd8973f204aa1684eab448f31f, type: 3}
   m_CancelAction: {fileID: 0}
   m_LeftClickAction: {fileID: 0}
@@ -1429,19 +1429,7 @@ MonoBehaviour:
     m_ActionId: 038f38fb-b7aa-4db8-ae72-2a2375b42c5e
     m_ActionName: Gameplay/Interact[/Keyboard/e]
   - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1822934337}
-        m_TargetAssemblyTypeName: InputHandler, Assembly-CSharp
-        m_MethodName: MovePressed
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_ActionId: cf8bb411-10ec-4a7b-b4ef-fa0d6a9c61da
     m_ActionName: Gameplay/Left[/Keyboard/a,/Keyboard/leftArrow]
   m_NeverAutoSwitchControlSchemes: 0
@@ -1476,7 +1464,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e926d8c267e132c41a1eea1b91015064, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveDirection: {x: 0, y: 0}
 --- !u!1001 &1830012280
 PrefabInstance:
   m_ObjectHideFlags: 0
