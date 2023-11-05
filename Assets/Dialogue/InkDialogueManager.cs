@@ -18,7 +18,7 @@ public class InkDialogueManager : MonoBehaviour
     [SerializeField] private GameObject[] choices;
     private TextMeshProUGUI[] choicesText;
 
-    private Story currnetStory;
+    private Story currentStory;
 
     public bool dialogueIsPlaying { get; private set; }
 
@@ -50,6 +50,14 @@ public class InkDialogueManager : MonoBehaviour
     {
         dialogueIsPlaying = false;
         animator = dialogueBox.GetComponent<Animator>();
+
+        choicesText = new TextMeshProUGUI[choices.Length];
+        int index = 0;
+        foreach (GameObject choice in choices)
+        {
+            choicesText[index] = choice.GetComponentInChildren<TextMeshProUGUI>();
+            index++;
+        }
     }
 
     // Update is called once per frame
@@ -70,7 +78,7 @@ public class InkDialogueManager : MonoBehaviour
     {
         GameManager.Instance.UpdateGameState(GameManager.GameState.Dialogue);
         animator.SetBool("IsOpen", true);
-        currnetStory = new Story(inkJSON.text);
+        currentStory = new Story(inkJSON.text);
         dialogueIsPlaying = true;
         _playerMovement.canMove = false;
 
@@ -87,12 +95,39 @@ public class InkDialogueManager : MonoBehaviour
     }
     private void ContinueStory(InputAction.CallbackContext ctx)
     {
-        if (!currnetStory.canContinue)
+        if (currentStory.canContinue)
         {
-            ExitDialogueMode();
-            return;
+            dialogueText.text = currentStory.Continue();
+            DisplayChoices();
         }
 
-        dialogueText.text = currnetStory.Continue();
+        else
+        {
+            ExitDialogueMode();
+        }
+    }
+
+    private void DisplayChoices()
+    {
+        List<Choice> currentChoices = currentStory.currentChoices;
+
+        if (currentChoices.Count > choices.Length)
+        {
+            Debug.LogError("More choices were given than the UI can support. " +
+                           "Number of choices given: " + currentChoices.Count);
+        }
+
+        int index = 0;
+        foreach (Choice choice in currentChoices)
+        {
+            choices[index].gameObject.SetActive(true);
+            choicesText[index].text = choice.text;
+            index++;
+        }
+
+        for (int i = index; i < choices.Length; i++)
+        {
+            choices[i].gameObject.SetActive(false);
+        }
     }
 }
