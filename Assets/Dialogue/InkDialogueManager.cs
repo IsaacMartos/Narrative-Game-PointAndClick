@@ -14,7 +14,7 @@ public class InkDialogueManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI dialogueText;
     private Animator animator;
 
-    [Header("Choice UI")]
+    [Header("Choices UI")]
     [SerializeField] private GameObject[] choices;
     private TextMeshProUGUI[] choicesText;
 
@@ -58,6 +58,7 @@ public class InkDialogueManager : MonoBehaviour
             choicesText[index] = choice.GetComponentInChildren<TextMeshProUGUI>();
             index++;
         }
+        
     }
 
     // Update is called once per frame
@@ -65,7 +66,6 @@ public class InkDialogueManager : MonoBehaviour
     {
         if (!dialogueIsPlaying) return;
 
-        // Cambiar a input nuevo
         if (_inputController.interact)
         {
             _inputController.AddInteractFunction(ContinueStory);
@@ -81,8 +81,8 @@ public class InkDialogueManager : MonoBehaviour
         currentStory = new Story(inkJSON.text);
         dialogueIsPlaying = true;
         _playerMovement.canMove = false;
-
         _inputController.AddInteractFunction(ContinueStory);
+        GetTheCurrentStory();
     }
     private void ExitDialogueMode()
     {
@@ -90,10 +90,24 @@ public class InkDialogueManager : MonoBehaviour
         dialogueIsPlaying = false;
         dialogueText.text = "";
         GameManager.Instance.UpdateGameState(GameManager.GameState.Playing);
-        _inputController.RemoveInteractFunction(ContinueStory);
         _playerMovement.canMove = true;
+        _inputController.RemoveInteractFunction(ContinueStory);
     }
     private void ContinueStory(InputAction.CallbackContext ctx)
+    {
+        if (currentStory.canContinue)
+        {
+            dialogueText.text = currentStory.Continue();
+            DisplayChoices();
+        }
+
+        else
+        {
+            ExitDialogueMode();
+        }
+    }
+
+    private void GetTheCurrentStory()
     {
         if (currentStory.canContinue)
         {
@@ -129,5 +143,19 @@ public class InkDialogueManager : MonoBehaviour
         {
             choices[i].gameObject.SetActive(false);
         }
+
+        StartCoroutine(SelectFirstChoice());
+    }
+
+    private IEnumerator SelectFirstChoice()
+    {
+        EventSystem.current.SetSelectedGameObject(null);
+        yield return new WaitForEndOfFrame();
+        EventSystem.current.SetSelectedGameObject(choices[0].gameObject);
+    }
+
+    public void MakeChoice(int choiceIndex)
+    {
+        currentStory.ChooseChoiceIndex(choiceIndex);
     }
 }
