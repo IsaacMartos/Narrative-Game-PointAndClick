@@ -69,9 +69,7 @@ public class InkDialogueManager : MonoBehaviour
         if (_inputController.interact)
         {
             _inputController.AddInteractFunction(ContinueStory);
-            //ContinueStory();
         }
-
     }
 
     public void EnterDialogueMode(TextAsset inkJSON)
@@ -86,9 +84,8 @@ public class InkDialogueManager : MonoBehaviour
     }
     private void ExitDialogueMode()
     {
-        animator.SetBool("IsOpen", false);
-        dialogueIsPlaying = false;
-        dialogueText.text = "";
+        //dialogueText.text = "";
+        StartCoroutine(EndDialogue());
         GameManager.Instance.UpdateGameState(GameManager.GameState.Playing);
         _playerMovement.canMove = true;
         _inputController.RemoveInteractFunction(ContinueStory);
@@ -157,5 +154,12 @@ public class InkDialogueManager : MonoBehaviour
     public void MakeChoice(int choiceIndex)
     {
         currentStory.ChooseChoiceIndex(choiceIndex);
+    }
+
+    private IEnumerator EndDialogue()
+    {
+        yield return new WaitForSeconds(2f);
+        dialogueIsPlaying = false;
+        animator.SetBool("IsOpen", false);
     }
 }
