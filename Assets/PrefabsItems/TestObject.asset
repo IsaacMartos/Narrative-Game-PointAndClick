@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Test
   description: this is a testing object
-  image: {fileID: 21300000, guid: 0ccc508108fa6ed4fa11b4a467d7f609, type: 3}
+  image: {fileID: 21300000, guid: e60718119cec31e4190849292fcde068, type: 3}
