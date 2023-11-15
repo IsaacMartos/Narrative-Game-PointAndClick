@@ -97,15 +97,12 @@ public class InkDialogueManager : MonoBehaviour
     {
         if (currentStory.canContinue)
         {
-<<<<<<< Updated upstream
             //dialogueText.text = currentStory.Continue();
             CleanChoices();
             StartCoroutine(TypeSentence(currentStory.Continue()));
-=======
             dialogueText.text = currentStory.Continue();
             DisplayChoices();
             HandleTags(currentStory.currentTags);
->>>>>>> Stashed changes
         }
 
         else
