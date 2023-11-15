@@ -196,6 +196,7 @@ MonoBehaviour:
   dialogueBox: {fileID: 1298122477}
   nameText: {fileID: 1807764776}
   dialogueText: {fileID: 1092894645}
+  nextButton: {fileID: 1789893085}
   choices:
   - {fileID: 34788014}
   - {fileID: 829123508}
@@ -1531,6 +1532,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28210df12b4360941b71ad627f2eadde, type: 3}
+--- !u!1 &1789893085 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8728624407686072630, guid: 43b93f5bf56597f489ca912691e5b4a3, type: 3}
+  m_PrefabInstance: {fileID: 375071014}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1807764776 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8728624408463897811, guid: 43b93f5bf56597f489ca912691e5b4a3, type: 3}
