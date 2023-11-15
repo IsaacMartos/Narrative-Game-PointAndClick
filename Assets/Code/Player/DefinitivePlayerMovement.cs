@@ -17,7 +17,11 @@ public class DefinitivePlayerMovement : MonoBehaviour
     
     private void FixedUpdate()
     {
-        if (!canMove) return;
+        if (!canMove) 
+        {
+            Stop();
+            return;
+        }
         
         HandleHorizontalMovement();
     }
