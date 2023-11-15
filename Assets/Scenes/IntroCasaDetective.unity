@@ -147,16 +147,16 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 36504104}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ce5a5d19ea5c9c448d6dcdf6ac86af9, type: 3}
+  m_Script: {fileID: 11500000, guid: 11781258431549249a7049b5737af760, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 1287868220}
   nameText: {fileID: 1387404195}
   dialogueText: {fileID: 479457932}
-  animator: {fileID: 1950934682}
-  Character1Image: {fileID: 1007302580}
-  Character2Image: {fileID: 746319020}
+  choices: []
+  _playerMovement: {fileID: 0}
 --- !u!4 &36504106
 Transform:
   m_ObjectHideFlags: 0
@@ -640,17 +640,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1500, y: 800}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &746319020 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8728624409229748884, guid: 43b93f5bf56597f489ca912691e5b4a3, type: 3}
-  m_PrefabInstance: {fileID: 1174779278}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &779757312
 GameObject:
   m_ObjectHideFlags: 0
@@ -834,7 +823,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e926d8c267e132c41a1eea1b91015064, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Pointer: {fileID: 1646266043}
 --- !u!114 &785529119
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -876,6 +864,18 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: bbdea619-369f-49c6-a66e-66a2c5fae185
     m_ActionName: Gameplay/Clcik[/Mouse/leftButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 038f38fb-b7aa-4db8-ae72-2a2375b42c5e
+    m_ActionName: Gameplay/Interact[/Keyboard/e]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: cf8bb411-10ec-4a7b-b4ef-fa0d6a9c61da
+    m_ActionName: Gameplay/Move[/Keyboard/w,/Keyboard/a,/Keyboard/s,/Keyboard/d,/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/leftArrow,/Keyboard/rightArrow]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 3c80696e-1813-4a65-959d-2586718928eb
+    m_ActionName: Gameplay/Submit[/Keyboard/enter]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Gameplay
@@ -1149,17 +1149,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1007302580 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8728624408300507983, guid: 43b93f5bf56597f489ca912691e5b4a3, type: 3}
-  m_PrefabInstance: {fileID: 1174779278}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1138780607
 GameObject:
   m_ObjectHideFlags: 0
@@ -1368,6 +1357,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1214665838}
     m_Modifications:
+    - target: {fileID: 7479279344344971994, guid: 43b93f5bf56597f489ca912691e5b4a3, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8728624407686072616, guid: 43b93f5bf56597f489ca912691e5b4a3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1470,6 +1463,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43b93f5bf56597f489ca912691e5b4a3, type: 3}
+--- !u!4 &1174779279 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7479279344344971994, guid: 43b93f5bf56597f489ca912691e5b4a3, type: 3}
+  m_PrefabInstance: {fileID: 1174779278}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1214665834
 GameObject:
   m_ObjectHideFlags: 0
@@ -1562,8 +1560,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1950934681}
   - {fileID: 2115203856}
+  - {fileID: 1174779279}
   - {fileID: 681935101}
   m_Father: {fileID: 0}
   m_RootOrder: 6
@@ -1573,6 +1571,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1287868220 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8728624407938653481, guid: 43b93f5bf56597f489ca912691e5b4a3, type: 3}
+  m_PrefabInstance: {fileID: 1174779278}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1344133068 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5765753406639941227, guid: 317f6d18d3a7b6c44b57694e20b7b7b5, type: 3}
@@ -1956,6 +1959,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  canMove: 0
 --- !u!61 &1569048892
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2463,8 +2467,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5620af02feb17940bc5949ed0d0b107, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueManager: {fileID: 36504105}
-  itemManager: {fileID: 1870393590}
   state: 0
 --- !u!1 &1823484692
 GameObject:
@@ -2726,23 +2728,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1870393588}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2226e8ab4527b5458ff7297cc1a5559, type: 3}
+  m_Script: {fileID: 11500000, guid: aa3c56e7efce699449f699e758c37d05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ObjectInspector: {fileID: 681935100}
   SpriteHolder: {fileID: 338219615}
   itemName: {fileID: 1855393507}
   itemDescription: {fileID: 779757314}
---- !u!224 &1950934681 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 8728624407938653482, guid: 43b93f5bf56597f489ca912691e5b4a3, type: 3}
-  m_PrefabInstance: {fileID: 1174779278}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &1950934682 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 8728624407938653485, guid: 43b93f5bf56597f489ca912691e5b4a3, type: 3}
-  m_PrefabInstance: {fileID: 1174779278}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1953640155
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2847,7 +2839,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1214665838}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

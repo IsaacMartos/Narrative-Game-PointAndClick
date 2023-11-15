@@ -7,7 +7,8 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
-
+    public InkDialogueManager dialogueManager;
+    public ItemManager itemManager;
     public GameState state;
 
     #region Events
