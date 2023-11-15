@@ -144,7 +144,7 @@ public class InkDialogueManager : MonoBehaviour
 
     private IEnumerator EndDialogue()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(.1f);
         dialogueIsPlaying = false;
         animator.SetBool("IsOpen", false);
     }
