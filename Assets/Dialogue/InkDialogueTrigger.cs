@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Input = UnityEngine.Windows.Input;
 
 public class InkDialogueTrigger : MonoBehaviour
 {
@@ -9,18 +10,16 @@ public class InkDialogueTrigger : MonoBehaviour
     bool CanTalk;
 
     [SerializeField] TextAsset inkJSON;
-    private InputController _inputController;
 
     private void Awake()
     {
         CanBeInteracted(false);
-        _inputController = FindObjectOfType<InputController>();
     }
 
     void Update()
     {
         //Cambiar a input nuevo
-     if (_inputController.interact && CanTalk && !InkDialogueManager.GetInstance().dialogueIsPlaying)
+     if (InputController.GetInstance().GetInteractPressed() && CanTalk && !InkDialogueManager.GetInstance().dialogueIsPlaying)
         {
             InkDialogueManager.GetInstance().EnterDialogueMode(inkJSON);
             CanBeInteracted(false);

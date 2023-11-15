@@ -7,11 +7,18 @@ using UnityEngine.InputSystem;
 
 public class InputController : MonoBehaviour
 {
-    
     public PlayerInput controls { get; private set; }
     public Vector2 movement { get; private set; }
     public bool interact { get; private set; }
+    public bool submit { get; private set; }
     public bool click { get; private set; }
+
+    private static InputController instance;
+
+    public static InputController GetInstance()
+    {
+        return instance;
+    }
 
     private void OnEnable()
     {
@@ -27,36 +34,75 @@ public class InputController : MonoBehaviour
     private void Awake()
     {
         controls = controls ?? new PlayerInput();
-        controls.Gameplay.Move.performed += ctx => movement = ctx.ReadValue<Vector2>();
-        controls.Gameplay.Move.canceled += ctx => movement = Vector2.zero;
-        controls.Gameplay.Interact.performed += ctx => interact = ctx.ReadValueAsButton();
-        controls.Gameplay.Interact.canceled += ctx => interact = ctx.ReadValueAsButton();
-        controls.Gameplay.Click.performed += ctx => click = ctx.ReadValueAsButton();
-        controls.Gameplay.Click.canceled += ctx => click = ctx.ReadValueAsButton();
+        if (instance != null)
+        {
+            Debug.LogError("Found more than one Input Manager in the scene.");
+        }
+        instance = this;
     }
 
-    #region Add & Remove Functions
-
-    public void AddInteractFunction(Action<InputAction.CallbackContext> function)
+    #region Functions
+    
+    public void MovePressed(InputAction.CallbackContext context)
     {
-        controls.Gameplay.Interact.started += function;
+        if (context.performed)
+        {
+            movement = context.ReadValue<Vector2>();
+        }
+        else if (context.canceled)
+        {
+            movement = context.ReadValue<Vector2>();
+        } 
     }
-    public void RemoveInteractFunction(Action<InputAction.CallbackContext> function)
+
+    public void InteractButtonPressed(InputAction.CallbackContext context)
     {
-        controls.Gameplay.Interact.started -= function;
+        if (context.performed)
+        {
+            interact = true;
+        }
+        else if (context.canceled)
+        {
+            interact = false;
+        }
     }
     
-    public void AddClickFunction(Action<InputAction.CallbackContext> function)
+    public void SubmitButtonPressed(InputAction.CallbackContext context)
     {
-        controls.Gameplay.Click.started += function;
+        if (context.performed)
+        {
+            submit = true;
+        }
+        else if (context.canceled)
+        {
+            submit = false;
+        }
     }
-    public void RemoveClickFunction(Action<InputAction.CallbackContext> function)
+
+    #endregion
+
+    #region GetValues
+
+    public bool GetInteractPressed() 
     {
-        controls.Gameplay.Click.started -= function;
+        bool result = interact;
+        interact = false;
+        return result;
+    }
+
+    public bool GetSubmitPressed() 
+    {
+        bool result = submit;
+        submit = false;
+        return result;
+    }
+    
+    public Vector2 GetMoveDirection() 
+    {
+        return movement;
     }
     
 
     #endregion
-    
     
 }

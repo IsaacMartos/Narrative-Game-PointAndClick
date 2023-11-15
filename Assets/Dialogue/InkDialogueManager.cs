@@ -27,7 +27,6 @@ public class InkDialogueManager : MonoBehaviour
     private const string SPEAKER_TAG = "speaker";
     private const string PORTRAIT_TAG = "portrait";
 
-    private InputController _inputController;
     [SerializeField] private DefinitivePlayerMovement _playerMovement;
 
     private void Awake()
@@ -38,7 +37,6 @@ public class InkDialogueManager : MonoBehaviour
         }
         instance = this;
 
-        _inputController = FindObjectOfType<InputController>();
     }
     public static InkDialogueManager GetInstance()
     {
@@ -66,21 +64,23 @@ public class InkDialogueManager : MonoBehaviour
     {
         if (!dialogueIsPlaying) return;
 
-        if (_inputController.interact)
+        if (InputController.GetInstance().GetSubmitPressed())
         {
-            _inputController.AddInteractFunction(ContinueStory);
+            Debug.Log("si hombre");
+            ContinueStory();
         }
+        
     }
 
     public void EnterDialogueMode(TextAsset inkJSON)
     {
+        Debug.Log("estoy en el siguiente estado del juego");
         GameManager.Instance.UpdateGameState(GameManager.GameState.Dialogue);
         animator.SetBool("IsOpen", true);
         currentStory = new Story(inkJSON.text);
         dialogueIsPlaying = true;
         _playerMovement.canMove = false;
-        _inputController.AddInteractFunction(ContinueStory);
-        GetTheCurrentStory();
+        ContinueStory();
     }
     private void ExitDialogueMode()
     {
@@ -88,9 +88,8 @@ public class InkDialogueManager : MonoBehaviour
         StartCoroutine(EndDialogue());
         GameManager.Instance.UpdateGameState(GameManager.GameState.Playing);
         _playerMovement.canMove = true;
-        _inputController.RemoveInteractFunction(ContinueStory);
     }
-    private void ContinueStory(InputAction.CallbackContext ctx)
+    private void ContinueStory()
     {
         if (currentStory.canContinue)
         {
@@ -100,20 +99,7 @@ public class InkDialogueManager : MonoBehaviour
 
         else
         {
-            ExitDialogueMode();
-        }
-    }
-
-    private void GetTheCurrentStory()
-    {
-        if (currentStory.canContinue)
-        {
-            dialogueText.text = currentStory.Continue();
-            DisplayChoices();
-        }
-
-        else
-        {
+            Debug.Log("saliendo de la historieta");
             ExitDialogueMode();
         }
     }
@@ -158,7 +144,7 @@ public class InkDialogueManager : MonoBehaviour
 
     private IEnumerator EndDialogue()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
         dialogueIsPlaying = false;
         animator.SetBool("IsOpen", false);
     }

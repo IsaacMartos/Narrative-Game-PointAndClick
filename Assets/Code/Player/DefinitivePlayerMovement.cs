@@ -9,27 +9,24 @@ public class DefinitivePlayerMovement : MonoBehaviour
     private float currentSpeed;
     [HideInInspector] public bool canMove;
 
-    [SerializeField] private InputController input;
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         canMove = true;
     }
     
-    private void Update()
+    private void FixedUpdate()
     {
         if (!canMove) return;
         
-        if (input.movement != Vector2.zero)
-        {
-            MovePlayer(input.movement);
-        }
-        else
-        {
-            currentSpeed = 0;
-        }
-        
-        rb.velocity = input.movement.normalized * (currentSpeed * Time.deltaTime * 100f);
+        HandleHorizontalMovement();
+    }
+
+    private void HandleHorizontalMovement()
+    {
+        Vector2 moveDirection = InputController.GetInstance().GetMoveDirection();
+        rb.velocity = new Vector2(moveDirection.x * currentSpeed, rb.velocity.y);
+        MovePlayer(moveDirection);
     }
     
     private void MovePlayer(Vector3 direction)
