@@ -12,6 +12,7 @@ public class InkDialogueManager : MonoBehaviour
     [SerializeField] private GameObject dialogueBox;
     [SerializeField] private TextMeshProUGUI nameText;
     [SerializeField] private TextMeshProUGUI dialogueText;
+    [SerializeField] private GameObject nextButton;
     private Animator animator;
 
     [Header("Choices UI")]
@@ -26,6 +27,8 @@ public class InkDialogueManager : MonoBehaviour
 
     private const string SPEAKER_TAG = "speaker";
     private const string PORTRAIT_TAG = "portrait";
+
+    private bool canContinue = false;
 
     [SerializeField] private DefinitivePlayerMovement _playerMovement;
 
@@ -64,7 +67,7 @@ public class InkDialogueManager : MonoBehaviour
     {
         if (!dialogueIsPlaying) return;
 
-        if (InputController.GetInstance().GetSubmitPressed())
+        if (InputController.GetInstance().GetSubmitPressed() && canContinue)
         {
             Debug.Log("si hombre");
             ContinueStory();
@@ -93,14 +96,41 @@ public class InkDialogueManager : MonoBehaviour
     {
         if (currentStory.canContinue)
         {
-            dialogueText.text = currentStory.Continue();
-            DisplayChoices();
+            //dialogueText.text = currentStory.Continue();
+            CleanChoices();
+            StartCoroutine(TypeSentence(currentStory.Continue()));
         }
 
         else
         {
             Debug.Log("saliendo de la historieta");
             ExitDialogueMode();
+        }
+    }
+    IEnumerator TypeSentence(string sentence)
+    {
+        canContinue = false;
+        nextButton.SetActive(false);
+        dialogueText.text = "";
+        foreach (char letter in sentence.ToCharArray())
+        {
+            dialogueText.text += letter;
+            yield return new WaitForSeconds(.02f);
+        }
+        DisplayChoices();
+        //Puedes darle al botón next
+        canContinue = true;
+        nextButton.SetActive(true);
+    }
+
+    private void CleanChoices()
+    {
+        List<Choice> currentChoices = currentStory.currentChoices;
+
+        int index = 0;
+        for (int i = index; i < choices.Length; i++)
+        {
+            choices[i].gameObject.SetActive(false);
         }
     }
 
@@ -144,7 +174,7 @@ public class InkDialogueManager : MonoBehaviour
 
     private IEnumerator EndDialogue()
     {
-        yield return new WaitForSeconds(.1f);
+        yield return new WaitForEndOfFrame();
         dialogueIsPlaying = false;
         animator.SetBool("IsOpen", false);
     }
