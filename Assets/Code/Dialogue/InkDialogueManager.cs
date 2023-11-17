@@ -100,7 +100,7 @@ public class InkDialogueManager : MonoBehaviour
             //dialogueText.text = currentStory.Continue();
             CleanChoices();
             StartCoroutine(TypeSentence(currentStory.Continue()));
-            DisplayChoices();
+            //DisplayChoices();
             HandleTags(currentStory.currentTags);
         }
 
