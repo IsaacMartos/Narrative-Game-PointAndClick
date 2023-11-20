@@ -13,6 +13,7 @@ public class InkDialogueManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI nameText;
     [SerializeField] private TextMeshProUGUI dialogueText;
     [SerializeField] private GameObject nextButton;
+    [SerializeField] private Animator portraitAnimator;
     private Animator animator;
 
     [Header("Choices UI")]
@@ -155,7 +156,7 @@ public class InkDialogueManager : MonoBehaviour
                     nameText.text = tagValue;
                     break;
                 case PORTRAIT_TAG:
-                    Debug.Log("portrait" + tagValue);
+                    portraitAnimator.Play(tagValue);
                     break;
                 case LAYOUT_TAG:
                     Debug.Log("layout" + tagValue);

@@ -231,6 +231,7 @@ MonoBehaviour:
   nameText: {fileID: 1807764776}
   dialogueText: {fileID: 1092894645}
   nextButton: {fileID: 1789893085}
+  portraitAnimator: {fileID: 1118748054}
   choices:
   - {fileID: 34788014}
   - {fileID: 829123508}
@@ -1521,6 +1522,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1118748050 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8728624409229748882, guid: 43b93f5bf56597f489ca912691e5b4a3, type: 3}
+  m_PrefabInstance: {fileID: 375071014}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1118748054
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1118748050}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8dba966481884164c8016009b4220239, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1224481105 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3106624444161901168, guid: 43b93f5bf56597f489ca912691e5b4a3, type: 3}
@@ -2405,6 +2432,10 @@ PrefabInstance:
     - target: {fileID: 3479824848787197443, guid: acf12a52abb6d054f854e394df565379, type: 3}
       propertyPath: m_Name
       value: InspectedObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 3479824848787197443, guid: acf12a52abb6d054f854e394df565379, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: acf12a52abb6d054f854e394df565379, type: 3}

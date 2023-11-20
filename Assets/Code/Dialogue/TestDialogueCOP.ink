@@ -1,16 +1,17 @@
-Dialogo de ejemplo 0 #speaker:BAD COP #portrait1:BC_neutral
+Dialogo de ejemplo 0 #speaker:BAD COP #portrait:badcop_neutral
 -> main
 
 === main ===
 Hola, esto es el texto de ejemplo 1 
 + [¿Esto funciona?]
-    Si! #portrait1:BC_happy
+    Si! #portrait:badcop_happy
 + [Muestra el TxT Ej 2]
-    Hola, esto es el texto de ejemplo 2.(Angry) #portrait1:BC_angry
+    Hola, esto es el texto de ejemplo 2.(Angry) #portrait:goodcop_mad
 
-- Bueno, supongo que esto es el texto de ejemplo 3 #speaker:GOOD COP #portrait2:GC_neutral
+- Bueno, supongo que esto es el texto de ejemplo 3 #speaker:GOOD COP 
+#portrait:goodcop_neutral
 
-¿Quieres repetir? #speaker:BAD COP #portrait1:BC_neutral
+¿Quieres repetir? #speaker:BAD COP #portrait:badcop_neutral
 + [Si]
     -> main
 + [No, terminemos]
