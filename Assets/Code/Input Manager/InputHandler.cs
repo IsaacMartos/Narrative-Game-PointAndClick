@@ -39,6 +39,7 @@ public class InputHandler : MonoBehaviour
         var mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mouseWorldPos.z = 0f;
         pointer.transform.position = mouseWorldPos;
+       
     }
 
     public void OnClick(InputAction.CallbackContext context)
@@ -49,7 +50,7 @@ public class InputHandler : MonoBehaviour
         if (!rayHit.collider) return;
 
         if (!rayHit.collider.GetComponent<Item>()) return;
-        if (GameManager.Instance.state == GameManager.GameState.Dialogue) return;
+        if (GameManager.Instance.state == GameManager.GameState.Description) return;
         var x = rayHit.collider.gameObject.GetComponent<Item>();
         x.ShowDescription();
         x.ShowOutline(false);

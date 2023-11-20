@@ -19,7 +19,21 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        Instance = this;
+        itemManager = FindObjectOfType<ItemManager>();
+        dialogueManager = FindObjectOfType<InkDialogueManager>();
+
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+
+        else
+        {
+            Destroy(gameObject);
+            return;
+        }
+        
+        DontDestroyOnLoad(gameObject);
     }
 
     private void Start()
@@ -45,6 +59,8 @@ public class GameManager : MonoBehaviour
                 break;
             case GameState.Victory:
                 break;
+            case GameState.Description:
+                break;
             default:
                 throw new ArgumentOutOfRangeException(nameof(newState), newState, null);
         }
@@ -62,6 +78,7 @@ public class GameManager : MonoBehaviour
         Dialogue,
         Playing,
         Lose,
-        Victory
+        Victory,
+        Description
     }
 }

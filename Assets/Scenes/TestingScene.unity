@@ -1185,8 +1185,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5620af02feb17940bc5949ed0d0b107, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueManager: {fileID: 81524200}
-  itemManager: {fileID: 482550985}
+  dialogueManager: {fileID: 0}
+  itemManager: {fileID: 0}
   state: 0
 --- !u!1 &829123508 stripped
 GameObject:
@@ -1639,7 +1639,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dialogueManager: {fileID: 81524200}
-  _itemManager: {fileID: 482550985}
+  _itemManager: {fileID: 0}
   _gameManager: {fileID: 810419122}
 --- !u!1001 &1411477863
 PrefabInstance:
@@ -1652,6 +1652,18 @@ PrefabInstance:
       propertyPath: data
       value: 
       objectReference: {fileID: 11400000, guid: b931506c772f3fd4e806a083df65e94d, type: 2}
+    - target: {fileID: 5765753406639941225, guid: 317f6d18d3a7b6c44b57694e20b7b7b5, type: 3}
+      propertyPath: nameText
+      value: 
+      objectReference: {fileID: 1319580936}
+    - target: {fileID: 5765753406639941225, guid: 317f6d18d3a7b6c44b57694e20b7b7b5, type: 3}
+      propertyPath: imageSlot
+      value: 
+      objectReference: {fileID: 307095156}
+    - target: {fileID: 5765753406639941225, guid: 317f6d18d3a7b6c44b57694e20b7b7b5, type: 3}
+      propertyPath: descriptionText
+      value: 
+      objectReference: {fileID: 1489085645}
     - target: {fileID: 5765753406639941227, guid: 317f6d18d3a7b6c44b57694e20b7b7b5, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -2018,6 +2030,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 3c80696e-1813-4a65-959d-2586718928eb
     m_ActionName: Gameplay/Submit[/Keyboard/enter]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 512123225}
+        m_TargetAssemblyTypeName: InputController, Assembly-CSharp
+        m_MethodName: EscapeButtonPressed
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: d7f1f44d-fefa-4a33-b640-eff4bbf1da60
+    m_ActionName: Gameplay/Escape[/Keyboard/escape]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Gameplay
@@ -2061,6 +2089,18 @@ PrefabInstance:
       propertyPath: data
       value: 
       objectReference: {fileID: 11400000, guid: b931506c772f3fd4e806a083df65e94d, type: 2}
+    - target: {fileID: 5765753406639941225, guid: 317f6d18d3a7b6c44b57694e20b7b7b5, type: 3}
+      propertyPath: nameText
+      value: 
+      objectReference: {fileID: 1319580936}
+    - target: {fileID: 5765753406639941225, guid: 317f6d18d3a7b6c44b57694e20b7b7b5, type: 3}
+      propertyPath: imageSlot
+      value: 
+      objectReference: {fileID: 307095156}
+    - target: {fileID: 5765753406639941225, guid: 317f6d18d3a7b6c44b57694e20b7b7b5, type: 3}
+      propertyPath: descriptionText
+      value: 
+      objectReference: {fileID: 1489085645}
     - target: {fileID: 5765753406639941227, guid: 317f6d18d3a7b6c44b57694e20b7b7b5, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -2135,6 +2175,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1359447665}
     m_Modifications:
+    - target: {fileID: 5765753406639941225, guid: 317f6d18d3a7b6c44b57694e20b7b7b5, type: 3}
+      propertyPath: nameText
+      value: 
+      objectReference: {fileID: 1319580936}
+    - target: {fileID: 5765753406639941225, guid: 317f6d18d3a7b6c44b57694e20b7b7b5, type: 3}
+      propertyPath: imageSlot
+      value: 
+      objectReference: {fileID: 307095156}
+    - target: {fileID: 5765753406639941225, guid: 317f6d18d3a7b6c44b57694e20b7b7b5, type: 3}
+      propertyPath: descriptionText
+      value: 
+      objectReference: {fileID: 1489085645}
     - target: {fileID: 5765753406639941227, guid: 317f6d18d3a7b6c44b57694e20b7b7b5, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -2363,6 +2415,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5991096}
     m_Modifications:
+    - target: {fileID: 5765753406639941225, guid: 317f6d18d3a7b6c44b57694e20b7b7b5, type: 3}
+      propertyPath: nameText
+      value: 
+      objectReference: {fileID: 1319580936}
+    - target: {fileID: 5765753406639941225, guid: 317f6d18d3a7b6c44b57694e20b7b7b5, type: 3}
+      propertyPath: imageSlot
+      value: 
+      objectReference: {fileID: 307095156}
+    - target: {fileID: 5765753406639941225, guid: 317f6d18d3a7b6c44b57694e20b7b7b5, type: 3}
+      propertyPath: descriptionText
+      value: 
+      objectReference: {fileID: 1489085645}
     - target: {fileID: 5765753406639941227, guid: 317f6d18d3a7b6c44b57694e20b7b7b5, type: 3}
       propertyPath: m_RootOrder
       value: 2

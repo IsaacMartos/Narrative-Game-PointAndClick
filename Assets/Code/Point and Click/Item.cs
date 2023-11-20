@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,9 +10,9 @@ public class Item : MonoBehaviour
     public CharacteristicsData data;
     public GameObject Outline;
     [Header("UI")]
-    public Image imageSlot;
-    public TextMeshProUGUI nameText;
-    public TextMeshProUGUI descriptionText;
+    [SerializeField] Image imageSlot;
+    [SerializeField] TextMeshProUGUI nameText;
+    [SerializeField] TextMeshProUGUI descriptionText;
     private void Start()
     {
         imageSlot = GameManager.Instance.itemManager.SpriteHolder;
@@ -19,6 +20,16 @@ public class Item : MonoBehaviour
         descriptionText = GameManager.Instance.itemManager.itemDescription;
         ShowOutline(false);
     }
+
+    private void Update()
+    {
+        if (GameManager.Instance.state == GameManager.GameState.Description && InputController.GetInstance().GetEscapePressed())
+        {
+            GameManager.Instance.itemManager.HideItem();
+            GameManager.Instance.itemManager.SetInteracting(false);
+        }
+    }
+
     public void ShowDescription()
     {
         GameManager.Instance.itemManager.SetInteracting(true);
@@ -28,7 +39,7 @@ public class Item : MonoBehaviour
         descriptionText.text = data.description;
         GameManager.Instance.itemManager.ShowItem();
         //DEBUG LUEGO LO QUITAMOS
-        StartCoroutine(DebugItemStopShowing());
+        //StartCoroutine(DebugItemStopShowing());
         Debug.Log(data.name + " " + data.description);
     }
     public void ShowOutline(bool show)
@@ -39,7 +50,7 @@ public class Item : MonoBehaviour
     {
         if (!collision.CompareTag("Pointer") || GameManager.Instance.itemManager.GetInteracting()) return;
         if (!collision.CompareTag("Pointer")) return;
-        if (GameManager.Instance.state == GameManager.GameState.Dialogue) return;
+        if (GameManager.Instance.state == GameManager.GameState.Description) return;
         ShowOutline(true);
     }
     private void OnTriggerExit2D(Collider2D collision)

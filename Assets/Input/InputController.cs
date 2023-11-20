@@ -11,6 +11,8 @@ public class InputController : MonoBehaviour
     public Vector2 movement { get; private set; }
     public bool interact { get; private set; }
     public bool submit { get; private set; }
+    
+    public bool escape { get; private set; }
     public bool click { get; private set; }
 
     private static InputController instance;
@@ -78,6 +80,18 @@ public class InputController : MonoBehaviour
             submit = false;
         }
     }
+    
+    public void EscapeButtonPressed(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            escape = true;
+        }
+        else if (context.canceled)
+        {
+            escape = false;
+        }
+    }
 
     #endregion
 
@@ -94,6 +108,13 @@ public class InputController : MonoBehaviour
     {
         bool result = submit;
         submit = false;
+        return result;
+    }
+    
+    public bool GetEscapePressed() 
+    {
+        bool result = escape;
+        escape = false;
         return result;
     }
     

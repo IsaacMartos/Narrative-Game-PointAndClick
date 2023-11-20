@@ -17,7 +17,8 @@ public class DefinitivePlayerMovement : MonoBehaviour
     
     private void FixedUpdate()
     {
-        if (GameManager.Instance.state == GameManager.GameState.Dialogue)
+        if (GameManager.Instance.state == GameManager.GameState.Dialogue ||
+            GameManager.Instance.state == GameManager.GameState.Description)
         {
             Stop();
             return;

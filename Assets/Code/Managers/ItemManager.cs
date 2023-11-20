@@ -21,7 +21,7 @@ public class ItemManager : MonoBehaviour
     {
         //CAMBIAR A UNA ANIMACIÓN
         ObjectInspector.SetActive(true);
-        GameManager.Instance.state = GameManager.GameState.Dialogue;
+        GameManager.Instance.state = GameManager.GameState.Description;
     }
     public void HideItem()
     {
