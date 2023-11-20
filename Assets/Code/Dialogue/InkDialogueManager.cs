@@ -85,6 +85,10 @@ public class InkDialogueManager : MonoBehaviour
         currentStory = new Story(inkJSON.text);
         dialogueIsPlaying = true;
         _playerMovement.canMove = false;
+
+        nameText.text = "???";
+        portraitAnimator.Play("default");
+        
         ContinueStory();
     }
     private void ExitDialogueMode()
