@@ -38,8 +38,8 @@ public class Item : MonoBehaviour
         nameText.text = data.name;
         descriptionText.text = data.description;
         GameManager.Instance.itemManager.ShowItem();
-        //DEBUG LUEGO LO QUITAMOS
-        //StartCoroutine(DebugItemStopShowing());
+        //DEBUG LUEGO LO QUITAMOS (CUANDO TENGAMOS UNA SOLUCIÓN QUE SI NO, SE QUEDA BUGEADO)
+        StartCoroutine(DebugItemStopShowing());
         Debug.Log(data.name + " " + data.description);
     }
     public void ShowOutline(bool show)
@@ -49,7 +49,7 @@ public class Item : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (!collision.CompareTag("Pointer") || GameManager.Instance.itemManager.GetInteracting()) return;
-        if (!collision.CompareTag("Pointer")) return;
+        //if (!collision.CompareTag("Pointer")) return;
         if (GameManager.Instance.state == GameManager.GameState.Description) return;
         ShowOutline(true);
     }
@@ -58,7 +58,6 @@ public class Item : MonoBehaviour
         if (!collision.CompareTag("Pointer")) return;
         ShowOutline(false);
     }
-
 
     IEnumerator DebugItemStopShowing()
     {

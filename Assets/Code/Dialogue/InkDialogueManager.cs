@@ -125,7 +125,7 @@ public class InkDialogueManager : MonoBehaviour
             yield return new WaitForSeconds(.02f);
         }
         DisplayChoices();
-        //Puedes darle al bot�n next
+        //Puedes darle al boton next
         canContinue = true;
         nextButton.SetActive(true);
     }
