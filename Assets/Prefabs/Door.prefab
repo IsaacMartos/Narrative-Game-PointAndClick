@@ -25,8 +25,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1127470890198212344}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.3868, y: 0, z: 0}
-  m_LocalScale: {x: 3.7735534, y: 1, z: 1}
+  m_LocalPosition: {x: 1.3868, y: 0.0548, z: 0}
+  m_LocalScale: {x: 3.7735534, y: 1.1049, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1559415876949198797}
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.6509434, g: 0.38381094, b: 0.20572266, a: 1}
+  m_Color: {r: 0.5754717, g: 0.3406922, b: 0.18187076, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -109,8 +109,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1559415875517564288}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.0163, y: -0.0031, z: 0}
-  m_LocalScale: {x: 1.2606705, y: 1.0381871, z: 1}
+  m_LocalPosition: {x: 0.0163, y: 0.0513, z: 0}
+  m_LocalScale: {x: 1.2606705, y: 1.1470929, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1559415876949198797}
@@ -179,7 +179,7 @@ GameObject:
   - component: {fileID: 1559415876949198797}
   - component: {fileID: 1559415876949198796}
   - component: {fileID: 8330769924207494495}
-  - component: {fileID: 7556811719347273906}
+  - component: {fileID: 5069580601603180871}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -218,7 +218,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.04990004}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -229,7 +229,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 1.0998}
   m_EdgeRadius: 0
 --- !u!50 &8330769924207494495
 Rigidbody2D:
@@ -252,7 +252,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &7556811719347273906
+--- !u!114 &5069580601603180871
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -295,8 +295,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3622219692672999235}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0.0548, z: 0}
+  m_LocalScale: {x: 1, y: 1.1049, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1559415876949198797}

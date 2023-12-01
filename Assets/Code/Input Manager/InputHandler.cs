@@ -56,11 +56,11 @@ public class InputHandler : MonoBehaviour
             x.ShowDescription();
             x.ShowOutline(false);
         }
-        if (rayHit.collider.GetComponent<Door>())
+        if (rayHit.collider.GetComponent<ClickableObject>())
         {
             if (GameManager.Instance.state == GameManager.GameState.Description) return;
-            var x = rayHit.collider.gameObject.GetComponent<Door>();
-            x.OpenDoor();
+            var x = rayHit.collider.gameObject.GetComponent<ClickableObject>();
+            x.Action();
         }
     }
 

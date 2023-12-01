@@ -2,43 +2,34 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ChangeRoom : MonoBehaviour
+public class ClickableObject : MonoBehaviour
 {
-    public GameObject Exterior;
-    public GameObject Interior;
     public GameObject Outline;
-    public bool OnRoom;
-
     // Start is called before the first frame update
     void Start()
     {
+        ShowOutline(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 
-    public void EnterRoom()
+    public virtual void Action()
     {
-        Exterior.SetActive(false);
-        Interior.SetActive(true);
-        ShowOutline(false);
-        OnRoom = true;
-    }
-    public void ExitRoom()
-    {
-        // Le falta un poco en el horno a este script. Estoy pensando
+        //Do something
     }
 
-    public void ShowOutline(bool show)
+    public virtual void ShowOutline(bool show)
     {
         Outline.SetActive(show);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (!collision.CompareTag("Pointer") || GameManager.Instance.itemManager.GetInteracting()) return;
+        //if (!collision.CompareTag("Pointer")) return;
         if (GameManager.Instance.state == GameManager.GameState.Description) return;
         ShowOutline(true);
     }
@@ -47,5 +38,5 @@ public class ChangeRoom : MonoBehaviour
         if (!collision.CompareTag("Pointer")) return;
         ShowOutline(false);
     }
-}
 
+}
