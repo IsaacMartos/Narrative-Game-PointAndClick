@@ -14,6 +14,7 @@ public class InkDialogueManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI dialogueText;
     [SerializeField] private GameObject nextButton;
     [SerializeField] private Animator portraitAnimator;
+    [SerializeField] private Animator LeftportraitAnimator;
     private Animator animator;
 
     [Header("Choices UI")]
@@ -88,6 +89,7 @@ public class InkDialogueManager : MonoBehaviour
 
         nameText.text = "???";
         portraitAnimator.Play("default");
+        LeftportraitAnimator.Play("default");
         
         ContinueStory();
     }
@@ -143,6 +145,7 @@ public class InkDialogueManager : MonoBehaviour
 
     private void HandleTags(List<string> currentTags)
     {
+        string animationName ="";
         foreach (string tag in currentTags)
         {
             string[] splitTag = tag.Split(":");
@@ -150,6 +153,7 @@ public class InkDialogueManager : MonoBehaviour
             {
                 Debug.LogError("Tag could not be apparently parsed: " + tag);
             }
+
 
             string tagKey = splitTag[0].Trim();
             string tagValue = splitTag[1].Trim();
@@ -160,15 +164,27 @@ public class InkDialogueManager : MonoBehaviour
                     nameText.text = tagValue;
                     break;
                 case PORTRAIT_TAG:
-                    portraitAnimator.Play(tagValue);
+                    animationName = tagValue;
+                    Debug.Log(tagValue);
                     break;
                 case LAYOUT_TAG:
-                    Debug.Log("layout" + tagValue);
+                    if (tagValue == "L")
+                    {
+                        LeftportraitAnimator.Play(animationName);
+                        Debug.Log(animationName);
+                    }
+                    if (tagValue == "R")
+                    {
+                        portraitAnimator.Play(animationName);
+                        Debug.Log(animationName);
+                    }
                     break;
                 default:
                     Debug.LogWarning("Tag came in but is not currently being handed: " + tag);
                     break;
             }
+            
+            
         }
     }
 
