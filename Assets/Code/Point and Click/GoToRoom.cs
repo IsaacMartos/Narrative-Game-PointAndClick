@@ -17,10 +17,10 @@ public class GoToRoom : ClickableObject
     public override void Action()
     {
         base.Action();
-        PreviousRoom.SetActive(false);
         NextRoom.SetActive(true);
         Vector3 NewPos = new Vector3(transform.position.x, Player.transform.position.y, Player.transform.position.z);
         Player.transform.position = NewPos;
+        PreviousRoom.SetActive(false);
 
     }
 
