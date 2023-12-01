@@ -598,7 +598,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3786536657452551152, guid: 28210df12b4360941b71ad627f2eadde, type: 3}
       propertyPath: m_Name
-      value: NPC
+      value: "T\xFA mismo"
       objectReference: {fileID: 0}
     - target: {fileID: 3786536657452551164, guid: 28210df12b4360941b71ad627f2eadde, type: 3}
       propertyPath: m_RootOrder
@@ -645,9 +645,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4584486860893183464, guid: 28210df12b4360941b71ad627f2eadde, type: 3}
+      propertyPath: Extra
+      value: 
+      objectReference: {fileID: 832996350}
+    - target: {fileID: 4584486860893183464, guid: 28210df12b4360941b71ad627f2eadde, type: 3}
       propertyPath: inkJSON
       value: 
       objectReference: {fileID: 4900000, guid: 4f6ead1c4b0e28544b4609ae8cae0155, type: 3}
+    - target: {fileID: 4584486860893183464, guid: 28210df12b4360941b71ad627f2eadde, type: 3}
+      propertyPath: HasExtra
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28210df12b4360941b71ad627f2eadde, type: 3}
 --- !u!4 &259662224 stripped
@@ -1783,6 +1791,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &771286012 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3786536657452551152, guid: 28210df12b4360941b71ad627f2eadde, type: 3}
+  m_PrefabInstance: {fileID: 1741017805}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &807413498
 GameObject:
   m_ObjectHideFlags: 0
@@ -1951,6 +1964,24 @@ Transform:
   m_Father: {fileID: 1273987945}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &832996346 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4139288828582695526, guid: 28210df12b4360941b71ad627f2eadde, type: 3}
+  m_PrefabInstance: {fileID: 259662223}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &832996350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 832996346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fc111253fba68b499176f70689e2a32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Object: {fileID: 771286012}
 --- !u!4 &849329318 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1559415876949198797, guid: 3c22c0a728f92da4eaaa8ab40a6f4e55, type: 3}
@@ -5412,6 +5443,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC
       objectReference: {fileID: 0}
+    - target: {fileID: 3786536657452551152, guid: 28210df12b4360941b71ad627f2eadde, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3786536657452551164, guid: 28210df12b4360941b71ad627f2eadde, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -5457,9 +5492,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4584486860893183464, guid: 28210df12b4360941b71ad627f2eadde, type: 3}
+      propertyPath: Extra
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4584486860893183464, guid: 28210df12b4360941b71ad627f2eadde, type: 3}
       propertyPath: inkJSON
       value: 
       objectReference: {fileID: 4900000, guid: 4f6ead1c4b0e28544b4609ae8cae0155, type: 3}
+    - target: {fileID: 4584486860893183464, guid: 28210df12b4360941b71ad627f2eadde, type: 3}
+      propertyPath: HasExtra
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28210df12b4360941b71ad627f2eadde, type: 3}
 --- !u!4 &1741017806 stripped

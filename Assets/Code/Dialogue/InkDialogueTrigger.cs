@@ -8,6 +8,8 @@ public class InkDialogueTrigger : MonoBehaviour
 {
     public GameObject visualCue;
     bool CanTalk;
+    public bool HasExtra;
+    public ExtraEfect Extra;
 
     [SerializeField] TextAsset inkJSON;
 
@@ -23,6 +25,8 @@ public class InkDialogueTrigger : MonoBehaviour
         {
             InkDialogueManager.GetInstance().EnterDialogueMode(inkJSON);
             CanBeInteracted(false);
+            if (!HasExtra) return;
+            ExtraEfects();
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -43,5 +47,9 @@ public class InkDialogueTrigger : MonoBehaviour
         CanTalk = can;
         //UI text
         //InteractText.SetActive(can);
+    }
+    private void ExtraEfects()
+    {
+        Extra.Action();
     }
 }
