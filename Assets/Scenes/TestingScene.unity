@@ -221,6 +221,7 @@ MonoBehaviour:
   dialogueText: {fileID: 1092894645}
   nextButton: {fileID: 1789893085}
   portraitAnimator: {fileID: 1118748054}
+  LeftportraitAnimator: {fileID: 0}
   choices:
   - {fileID: 34788014}
   - {fileID: 829123508}
@@ -1071,7 +1072,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3786536657452551164, guid: 28210df12b4360941b71ad627f2eadde, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.85
+      value: -2.69
       objectReference: {fileID: 0}
     - target: {fileID: 3786536657452551164, guid: 28210df12b4360941b71ad627f2eadde, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1599,7 +1600,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3786536657452551164, guid: 28210df12b4360941b71ad627f2eadde, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.85
+      value: -2.69
       objectReference: {fileID: 0}
     - target: {fileID: 3786536657452551164, guid: 28210df12b4360941b71ad627f2eadde, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2004,11 +2005,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2034368657715806782, guid: 538dccf524b5ced468e21ccef6057a0a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.94
+      value: -6.88
       objectReference: {fileID: 0}
     - target: {fileID: 2034368657715806782, guid: 538dccf524b5ced468e21ccef6057a0a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.45
+      value: -2.24
       objectReference: {fileID: 0}
     - target: {fileID: 2034368657715806782, guid: 538dccf524b5ced468e21ccef6057a0a, type: 3}
       propertyPath: m_LocalPosition.z

@@ -10,8 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2abeb84ba7fd355459e8a41f0b2ebaf2, type: 3}
-  m_Name: Despertador
+  m_Name: Bed
   m_EditorClassIdentifier: 
-  name: Despertador
-  description: El reloj marca las 12:23 am
-  image: {fileID: 21300000, guid: 1126bec4361d88f44863fc0e5cebea90, type: 3}
+  name: Cama
+  description: "Tu cama deshehca. Ahora mismo no parece muy c\xF3moda. Has dormido
+    suficiente"
+  image: {fileID: 21300000, guid: fe086fb6da1b5ca4aa0fdef70293e113, type: 3}

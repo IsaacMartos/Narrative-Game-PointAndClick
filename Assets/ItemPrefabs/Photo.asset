@@ -15,4 +15,4 @@ MonoBehaviour:
   name: "Fotograf\xEDa de tu esposa"
   description: "Est\xE1 tan sonriente como siempre. Sientes una punzada en el coraz\xF3n.
     La hechas de menos"
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: c54df82c88716334cb3a3fb4b3977b32, type: 3}
