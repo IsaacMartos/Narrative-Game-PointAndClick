@@ -6,7 +6,7 @@ public class GoToRoom : ClickableObject
 {
     public GameObject PreviousRoom;
     public GameObject NextRoom;
-    public GameObject Player;
+    private GameObject Player;
 
     // Start is called before the first frame update
     private void Awake()
