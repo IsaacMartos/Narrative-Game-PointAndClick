@@ -763,7 +763,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3786536657452551164, guid: 28210df12b4360941b71ad627f2eadde, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.68
+      value: 6.95
       objectReference: {fileID: 0}
     - target: {fileID: 3786536657452551164, guid: 28210df12b4360941b71ad627f2eadde, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1331,7 +1331,7 @@ MonoBehaviour:
   dialogueBox: {fileID: 275175239}
   nameText: {fileID: 1305360797}
   dialogueText: {fileID: 423352785}
-  nextButton: {fileID: 2073705280}
+  nextButton: {fileID: 0}
   portraitAnimator: {fileID: 1865526852}
   LeftportraitAnimator: {fileID: 1987332787}
   choices:
@@ -2843,8 +2843,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 330b174d0f1c44a468428ba136e775a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &2073705280 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8728624407686072630, guid: 43b93f5bf56597f489ca912691e5b4a3, type: 3}
-  m_PrefabInstance: {fileID: 396748284}
-  m_PrefabAsset: {fileID: 0}
