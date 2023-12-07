@@ -622,6 +622,11 @@ Transform:
   m_Father: {fileID: 1273987945}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &183104844 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4366617907428542758, guid: 43b93f5bf56597f489ca912691e5b4a3, type: 3}
+  m_PrefabInstance: {fileID: 1375109379}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &228541987
 GameObject:
   m_ObjectHideFlags: 0
@@ -3509,7 +3514,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1080999564
 Transform:
   m_ObjectHideFlags: 0
@@ -3539,11 +3544,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1128844779 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8728624407686072630, guid: 43b93f5bf56597f489ca912691e5b4a3, type: 3}
-  m_PrefabInstance: {fileID: 1375109379}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1138780607
 GameObject:
   m_ObjectHideFlags: 0
@@ -6825,6 +6825,10 @@ PrefabInstance:
       propertyPath: HasExtra
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4584486860893183464, guid: 28210df12b4360941b71ad627f2eadde, type: 3}
+      propertyPath: hasExtra
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28210df12b4360941b71ad627f2eadde, type: 3}
 --- !u!4 &1741017806 stripped
@@ -7079,7 +7083,7 @@ MonoBehaviour:
   dialogueBox: {fileID: 1375109384}
   nameText: {fileID: 129484419}
   dialogueText: {fileID: 1113017202}
-  nextButton: {fileID: 1128844779}
+  nextButton: {fileID: 183104844}
   portraitAnimator: {fileID: 2123915311}
   LeftportraitAnimator: {fileID: 1862138639}
   choices:
@@ -7973,6 +7977,10 @@ PrefabInstance:
       objectReference: {fileID: 4900000, guid: 99f3aa8787e9ba648a55f3bb2709c347, type: 3}
     - target: {fileID: 4584486860893183464, guid: 28210df12b4360941b71ad627f2eadde, type: 3}
       propertyPath: HasExtra
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4584486860893183464, guid: 28210df12b4360941b71ad627f2eadde, type: 3}
+      propertyPath: hasExtra
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
