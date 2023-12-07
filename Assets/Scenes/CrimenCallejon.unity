@@ -144,7 +144,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &63187993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -160,6 +160,7 @@ MonoBehaviour:
   _dialogueManager: {fileID: 780473239}
   _itemManager: {fileID: 0}
   _gameManager: {fileID: 2062513758}
+  _pointer: {fileID: 0}
 --- !u!4 &63187994
 Transform:
   m_ObjectHideFlags: 0
@@ -2370,7 +2371,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &1806620232
 Rigidbody2D:
   serializedVersion: 4
@@ -2783,6 +2784,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueManager: {fileID: 780473239}
   itemManager: {fileID: 1495355727}
+  pointer: {fileID: 0}
   state: 0
 --- !u!4 &2062513759
 Transform:

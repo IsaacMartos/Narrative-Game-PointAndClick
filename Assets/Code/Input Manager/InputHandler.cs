@@ -22,11 +22,16 @@ public class InputHandler : MonoBehaviour
         {
             Debug.LogWarning("More than one Input manager on this scene");
         }
-        instance = this;
 
-        _mainCamera = Camera.main;
-        pointer = GameObject.FindGameObjectWithTag("Pointer");
         player = GameObject.FindGameObjectWithTag("Player");
+        
+        instance = this;
+    }
+
+    private void Start()
+    {
+        pointer = Singleton.Instance.Pointer;
+        _mainCamera = Camera.main;
     }
 
     public static InputHandler GetInstance()
@@ -40,7 +45,14 @@ public class InputHandler : MonoBehaviour
         var mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mouseWorldPos.z = 0f;
         pointer.transform.position = mouseWorldPos;
+        Debug.Log(_mainCamera);
 
+    }
+
+    public void GetCameraAllRight()
+    {
+        Debug.Log("Aignada la camara nueva");
+        _mainCamera = Camera.main;
     }
 
     public void OnClick(InputAction.CallbackContext context)
