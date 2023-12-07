@@ -75,7 +75,6 @@ public class InkDialogueManager : MonoBehaviour
             Debug.Log("si hombre");
             ContinueStory();
         }
-        
     }
 
     public void EnterDialogueMode(TextAsset inkJSON)

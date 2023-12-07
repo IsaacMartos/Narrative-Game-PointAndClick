@@ -2,13 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Serialization;
 using Input = UnityEngine.Windows.Input;
 
 public class InkDialogueTrigger : MonoBehaviour
 {
     public GameObject visualCue;
-    bool CanTalk;
-    public bool HasExtra;
+    public bool canTalk;
+    public bool hasExtra;
     public ExtraEfect Extra;
 
     [SerializeField] TextAsset inkJSON;
@@ -20,14 +21,20 @@ public class InkDialogueTrigger : MonoBehaviour
 
     void Update()
     {
-     if (InputController.GetInstance().GetInteractPressed() && CanTalk && !InkDialogueManager.GetInstance().dialogueIsPlaying)
-     {
-         Debug.Log("Esto esta apretando la E y furulando");
-         InkDialogueManager.GetInstance().EnterDialogueMode(inkJSON);
-         CanBeInteracted(false);
-         if (!HasExtra) return;
-         ExtraEfects();
-     }
+        if ( canTalk && InkDialogueManager.GetInstance().dialogueIsPlaying == false && 
+             GameManager.Instance.state == GameManager.GameState.Playing && InputController.GetInstance().GetInteractionPressed())
+        {
+            StartTriggerInteraction();
+        }
+    }
+
+    public void StartTriggerInteraction()
+    {
+        Debug.Log("Esto esta apretando la E y furulando");
+        InkDialogueManager.GetInstance().EnterDialogueMode(inkJSON);
+        CanBeInteracted(false);
+        if (!hasExtra) return;
+        ExtraEfects();
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -44,7 +51,7 @@ public class InkDialogueTrigger : MonoBehaviour
     public void CanBeInteracted(bool can)
     {
         visualCue.SetActive(can);
-        CanTalk = can;
+        canTalk = can;
         //UI text
         //InteractText.SetActive(can);
     }

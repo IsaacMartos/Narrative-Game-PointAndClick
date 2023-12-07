@@ -3083,6 +3083,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: d7f1f44d-fefa-4a33-b640-eff4bbf1da60
     m_ActionName: Gameplay/Escape[/Keyboard/escape]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 706585518}
+        m_TargetAssemblyTypeName: InputController, Assembly-CSharp
+        m_MethodName: InteractionButtonPressed
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 57fa4e9e-7570-42f2-b87b-5b9f14d74a20
+    m_ActionName: Gameplay/Interaction[/Keyboard/e]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Gameplay

@@ -45,6 +45,5 @@ public class PlayerMovement : MonoBehaviour
         // if (GameManager.Instance.state == GameManager.GameState.Dialogue) return;
         moveVector = Vector2.zero;
     }
-
     
 }

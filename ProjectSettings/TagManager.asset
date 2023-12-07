@@ -6,6 +6,7 @@ TagManager:
   tags:
   - DialogueManager
   - Pointer
+  - NPC
   layers:
   - Default
   - TransparentFX

@@ -25,7 +25,6 @@ public class Item : MonoBehaviour
     {
         if (GameManager.Instance.state == GameManager.GameState.Description && InputController.GetInstance().GetEscapePressed())
         {
-            Debug.Log("Fuera item");
             GameManager.Instance.itemManager.HideItem();
             GameManager.Instance.itemManager.SetInteracting(false);
         }
@@ -39,8 +38,6 @@ public class Item : MonoBehaviour
         nameText.text = data.name;
         descriptionText.text = data.description;
         GameManager.Instance.itemManager.ShowItem();
-        //DEBUG LUEGO LO QUITAMOS (CUANDO TENGAMOS UNA SOLUCIÓN QUE SI NO, SE QUEDA BUGEADO)
-        //StartCoroutine(DebugItemStopShowing());
         Debug.Log(data.name + " " + data.description);
     }
     public void ShowOutline(bool show)

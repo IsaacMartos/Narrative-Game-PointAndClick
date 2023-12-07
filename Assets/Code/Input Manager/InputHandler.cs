@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -39,7 +40,7 @@ public class InputHandler : MonoBehaviour
         var mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mouseWorldPos.z = 0f;
         pointer.transform.position = mouseWorldPos;
-       
+
     }
 
     public void OnClick(InputAction.CallbackContext context)
@@ -75,6 +76,4 @@ public class InputHandler : MonoBehaviour
             interactionPressed = false;
         }
     }
-
-    
 }

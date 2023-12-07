@@ -14,6 +14,7 @@ public class InputController : MonoBehaviour
     
     public bool escape { get; private set; }
     public bool click { get; private set; }
+    public bool interaction { get; private set; }
 
     private static InputController instance;
 
@@ -92,6 +93,18 @@ public class InputController : MonoBehaviour
             escape = false;
         }
     }
+    
+    public void InteractionButtonPressed(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            interaction = true;
+        }
+        else if (context.canceled)
+        {
+            interaction = false;
+        }
+    }
 
     #endregion
 
@@ -101,6 +114,13 @@ public class InputController : MonoBehaviour
     {
         bool result = interact;
         interact = false;
+        return result;
+    }
+    
+    public bool GetInteractionPressed() 
+    {
+        bool result = interaction;
+        interaction = false;
         return result;
     }
 
