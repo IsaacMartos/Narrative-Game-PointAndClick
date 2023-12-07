@@ -72,7 +72,6 @@ public class InkDialogueManager : MonoBehaviour
 
         if (InputController.GetInstance().GetSubmitPressed() && canContinue)
         {
-            Debug.Log("si hombre");
             ContinueStory();
         }
     }
