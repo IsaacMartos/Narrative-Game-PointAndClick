@@ -24,13 +24,14 @@ public class InputHandler : MonoBehaviour
         }
 
         player = GameObject.FindGameObjectWithTag("Player");
-        _mainCamera = Singleton.Instance.Camera;
+        
         instance = this;
     }
 
     private void Start()
     {
         pointer = Singleton.Instance.Pointer;
+        
     }
 
     public static InputHandler GetInstance()
@@ -40,6 +41,7 @@ public class InputHandler : MonoBehaviour
 
     void Update()
     {
+        _mainCamera = Camera.main;
         //pointer to mouse position
         var mouseWorldPos = _mainCamera.ScreenToWorldPoint(Input.mousePosition);
         mouseWorldPos.z = 0f;
