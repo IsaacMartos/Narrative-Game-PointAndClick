@@ -57,18 +57,6 @@ public class InputController : MonoBehaviour
             movement = context.ReadValue<Vector2>();
         } 
     }
-
-    public void InteractButtonPressed(InputAction.CallbackContext context)
-    {
-        if (context.performed)
-        {
-            interact = true;
-        }
-        else if (context.canceled)
-        {
-            interact = false;
-        }
-    }
     
     public void SubmitButtonPressed(InputAction.CallbackContext context)
     {
@@ -109,13 +97,6 @@ public class InputController : MonoBehaviour
     #endregion
 
     #region GetValues
-
-    public bool GetInteractPressed() 
-    {
-        bool result = interact;
-        interact = false;
-        return result;
-    }
     
     public bool GetInteractionPressed() 
     {
