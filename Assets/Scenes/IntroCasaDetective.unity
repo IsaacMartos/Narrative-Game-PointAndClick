@@ -3068,7 +3068,19 @@ MonoBehaviour:
     m_ActionId: 3c80696e-1813-4a65-959d-2586718928eb
     m_ActionName: Gameplay/Submit[/Keyboard/enter]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 706585518}
+        m_TargetAssemblyTypeName: InputController, Assembly-CSharp
+        m_MethodName: EscapeButtonPressed
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: d7f1f44d-fefa-4a33-b640-eff4bbf1da60
     m_ActionName: Gameplay/Escape[/Keyboard/escape]
   m_NeverAutoSwitchControlSchemes: 0
@@ -4117,7 +4129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dialogueManager: {fileID: 1801793257}
-  _itemManager: {fileID: 0}
+  _itemManager: {fileID: 281046163}
   _gameManager: {fileID: 68854247}
 --- !u!4 &1278325011
 Transform:

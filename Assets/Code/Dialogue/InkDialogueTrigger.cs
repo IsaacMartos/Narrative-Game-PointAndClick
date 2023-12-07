@@ -20,14 +20,14 @@ public class InkDialogueTrigger : MonoBehaviour
 
     void Update()
     {
-        //Cambiar a input nuevo
      if (InputController.GetInstance().GetInteractPressed() && CanTalk && !InkDialogueManager.GetInstance().dialogueIsPlaying)
-        {
-            InkDialogueManager.GetInstance().EnterDialogueMode(inkJSON);
-            CanBeInteracted(false);
-            if (!HasExtra) return;
-            ExtraEfects();
-        }
+     {
+         Debug.Log("Esto esta apretando la E y furulando");
+         InkDialogueManager.GetInstance().EnterDialogueMode(inkJSON);
+         CanBeInteracted(false);
+         if (!HasExtra) return;
+         ExtraEfects();
+     }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
