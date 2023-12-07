@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public InkDialogueManager dialogueManager;
     public ItemManager itemManager;
     public GameObject pointer;
+    public Camera camera;
     public GameState state;
 
     #region Events
@@ -22,7 +23,6 @@ public class GameManager : MonoBehaviour
     {
         itemManager = FindObjectOfType<ItemManager>();
         dialogueManager = FindObjectOfType<InkDialogueManager>();
-        pointer = GameObject.FindGameObjectWithTag("Pointer");
 
         if (Instance == null)
         {
@@ -41,6 +41,8 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         UpdateGameState(GameState.Playing);
+        pointer = Singleton.Instance.Pointer;
+        camera = Singleton.Instance.Camera;
     }
 
     public void UpdateGameState(GameState newState)

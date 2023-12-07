@@ -12,6 +12,6 @@ public class GoToScene : ClickableObject
         base.Action();
         Debug.Log("wut");
         SceneManager.LoadScene(NextScene);
-        
+        GameManager.Instance.camera = Singleton.Instance.Camera;
     }
 }

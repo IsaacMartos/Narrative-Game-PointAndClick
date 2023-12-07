@@ -544,6 +544,7 @@ MonoBehaviour:
   dialogueManager: {fileID: 1801793257}
   itemManager: {fileID: 281046163}
   pointer: {fileID: 1646266043}
+  camera: {fileID: 1716831059}
   state: 0
 --- !u!4 &68854248
 Transform:
@@ -3641,6 +3642,7 @@ MonoBehaviour:
   _itemManager: {fileID: 281046163}
   _gameManager: {fileID: 68854247}
   _pointer: {fileID: 1646266043}
+  _camera: {fileID: 0}
 --- !u!4 &1278325011
 Transform:
   m_ObjectHideFlags: 0
@@ -5856,6 +5858,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8736004232769310694, guid: 7ac93e8ce271d8a44bfc17f2abd688e3, type: 3}
   m_PrefabInstance: {fileID: 1689693974}
   m_PrefabAsset: {fileID: 0}
+--- !u!20 &1716831059 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 2361872173170741766, guid: 538dccf524b5ced468e21ccef6057a0a, type: 3}
+  m_PrefabInstance: {fileID: 1663009306}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1741017805
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7190,6 +7197,18 @@ PrefabInstance:
     - target: {fileID: 1559415876949198795, guid: 3c22c0a728f92da4eaaa8ab40a6f4e55, type: 3}
       propertyPath: m_Name
       value: Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 1559415876949198796, guid: 3c22c0a728f92da4eaaa8ab40a6f4e55, type: 3}
+      propertyPath: m_Size.x
+      value: 1.6019249
+      objectReference: {fileID: 0}
+    - target: {fileID: 1559415876949198796, guid: 3c22c0a728f92da4eaaa8ab40a6f4e55, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.02736032
+      objectReference: {fileID: 0}
+    - target: {fileID: 1559415876949198796, guid: 3c22c0a728f92da4eaaa8ab40a6f4e55, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.049900055
       objectReference: {fileID: 0}
     - target: {fileID: 1559415876949198797, guid: 3c22c0a728f92da4eaaa8ab40a6f4e55, type: 3}
       propertyPath: m_RootOrder

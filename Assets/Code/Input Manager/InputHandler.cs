@@ -24,14 +24,13 @@ public class InputHandler : MonoBehaviour
         }
 
         player = GameObject.FindGameObjectWithTag("Player");
-        
+        _mainCamera = Singleton.Instance.Camera;
         instance = this;
     }
 
     private void Start()
     {
         pointer = Singleton.Instance.Pointer;
-        _mainCamera = Camera.main;
     }
 
     public static InputHandler GetInstance()
@@ -42,17 +41,9 @@ public class InputHandler : MonoBehaviour
     void Update()
     {
         //pointer to mouse position
-        var mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        var mouseWorldPos = _mainCamera.ScreenToWorldPoint(Input.mousePosition);
         mouseWorldPos.z = 0f;
         pointer.transform.position = mouseWorldPos;
-        Debug.Log(_mainCamera);
-
-    }
-
-    public void GetCameraAllRight()
-    {
-        Debug.Log("Aignada la camara nueva");
-        _mainCamera = Camera.main;
     }
 
     public void OnClick(InputAction.CallbackContext context)
