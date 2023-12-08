@@ -23,7 +23,7 @@ public class TimeManager : MonoBehaviour
 
     private void TimeTraveller()
     {
-        if (GameManager.Instance.state == GameManager.GameState.Dialogue) return;
+        if (GameManager.Instance.state == GameManager.GameState.Dialogue || GameManager.Instance.state == GameManager.GameState.Description) return;
 
         if (!Input.GetKeyDown(KeyCode.Tab)) return;
 
