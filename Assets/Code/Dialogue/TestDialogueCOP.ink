@@ -7,7 +7,6 @@ Hola, esto es el texto de ejemplo 1
     Si! #portrait:badcop_happy
 + [Muestra el TxT Ej 2]
     Hola, esto es el texto de ejemplo 2.(Angry) #portrait:goodcop_mad
-
 - Bueno, supongo que esto es el texto de ejemplo 3 #speaker:GOOD COP 
 #portrait:goodcop_neutral
 

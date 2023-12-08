@@ -13,5 +13,10 @@ Fíjate bien en la parte derecha.#speaker:Charles #portrait:Charles_neutral #lay
 
 … #speaker:John #portrait:SadJohn_surprised
 No puede ser.#speaker:John #layout:L
+Esa carta... Es la misma.#speaker:John #layout:L
+
+Se que aún es un poco pronto para volver, sobre todo después de que recursos humanos te apartara del caso. Pero te necesitamos. Y tú también lo necesitas#speaker:Charles #portrait:Charles_neutral #layout:R
+
+Gracias Charles.#speaker:John #portrait:SadJohn_neutral #layout:L
 
 Ponte algo decente, te espero en el coche.#speaker:Charles #portrait:Charles_neutral #layout:R
