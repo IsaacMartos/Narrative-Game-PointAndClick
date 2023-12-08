@@ -19,6 +19,7 @@ public class ClickableObject : MonoBehaviour
 
     public virtual void Action()
     {
+        
         //Do something
     }
 
@@ -30,7 +31,7 @@ public class ClickableObject : MonoBehaviour
     {
         if (!collision.CompareTag("Pointer") || GameManager.Instance.itemManager.GetInteracting()) return;
         //if (!collision.CompareTag("Pointer")) return;
-        if (GameManager.Instance.state == GameManager.GameState.Description) return;
+        if (GameManager.Instance.state == GameManager.GameState.Description || GameManager.Instance.state == GameManager.GameState.Dialogue) return;
         ShowOutline(true);
     }
     private void OnTriggerExit2D(Collider2D collision)

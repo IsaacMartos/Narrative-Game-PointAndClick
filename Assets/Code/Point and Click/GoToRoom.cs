@@ -17,6 +17,7 @@ public class GoToRoom : ClickableObject
     public override void Action()
     {
         base.Action();
+        if (GameManager.Instance.state == GameManager.GameState.Description || GameManager.Instance.state == GameManager.GameState.Dialogue) return;
         NextRoom.SetActive(true);
         Vector3 NewPos = new Vector3(transform.position.x, Player.transform.position.y, Player.transform.position.z);
         Player.transform.position = NewPos;

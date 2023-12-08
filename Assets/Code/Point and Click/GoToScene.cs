@@ -10,6 +10,7 @@ public class GoToScene : ClickableObject
     public override void Action()
     {
         base.Action();
+        if (GameManager.Instance.state == GameManager.GameState.Description || GameManager.Instance.state == GameManager.GameState.Dialogue) return;
         Debug.Log("wut");
         SceneManager.LoadScene(NextScene);
         GameManager.Instance.camera = Singleton.Instance.Camera;

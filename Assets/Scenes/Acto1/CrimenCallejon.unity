@@ -701,7 +701,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 266365852}
-  NextScene: CrimenCallejon
+  NextScene: FinActo1CasaDetective
 --- !u!4 &399014223 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3786536657452551164, guid: 28210df12b4360941b71ad627f2eadde, type: 3}
@@ -3351,7 +3351,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 1752818955}
-  NextScene: CrimenCallejon
+  NextScene: FinActo1CasaDetective
 --- !u!1 &1772229461
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DefinitivePlayerMovement : MonoBehaviour
 {
+    public SpriteRenderer sprite;
     private Rigidbody2D rb;
     public float speed = 100;
     private float currentSpeed;
@@ -32,6 +33,14 @@ public class DefinitivePlayerMovement : MonoBehaviour
         Vector2 moveDirection = InputController.GetInstance().GetMoveDirection();
         rb.velocity = new Vector2(moveDirection.x * currentSpeed, rb.velocity.y);
         MovePlayer(moveDirection);
+        if (moveDirection.x>0)
+        {
+            sprite.flipX = false;
+        }
+        if (moveDirection.x<0)
+        {
+            sprite.flipX = true;
+        }
     }
     
     private void MovePlayer(Vector3 direction)

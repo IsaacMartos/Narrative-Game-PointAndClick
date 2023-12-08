@@ -265,5 +265,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c10573baa9a4dd7499bd03f2053bc677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 2034368657715806783}
   speed: 5
   canMove: 0
