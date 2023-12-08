@@ -13,6 +13,9 @@ public class Item : MonoBehaviour
     [SerializeField] Image imageSlot;
     [SerializeField] TextMeshProUGUI nameText;
     [SerializeField] TextMeshProUGUI descriptionText;
+    [Header("Extra")]
+    public bool Mandatory;
+
     private void Start()
     {
         imageSlot = GameManager.Instance.itemManager.SpriteHolder;
@@ -39,6 +42,11 @@ public class Item : MonoBehaviour
         descriptionText.text = data.description;
         GameManager.Instance.itemManager.ShowItem();
         Debug.Log(data.name + " " + data.description);
+
+        if (!Mandatory) return;
+        GameObject.Find("FindAllClues").GetComponent<FindAllClues>().AddClue();
+        Mandatory = false;
+
     }
     public void ShowOutline(bool show)
     {
