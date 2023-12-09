@@ -1879,8 +1879,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 589799247}
   m_LocalRotation: {x: -0, y: -0, z: 0.70710707, w: 0.70710653}
-  m_LocalPosition: {x: 14.632299, y: -1.26, z: 0}
-  m_LocalScale: {x: 4.324183, y: 0.6048026, z: 0.22218}
+  m_LocalPosition: {x: 14.632299, y: -1.0486, z: 0}
+  m_LocalScale: {x: 3.9012778, y: 0.6048026, z: 0.22218}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1273987945}
@@ -5213,8 +5213,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1550216631}
   m_LocalRotation: {x: -0, y: -0, z: 0.70710707, w: 0.70710653}
-  m_LocalPosition: {x: 30.31, y: -1.26, z: 0}
-  m_LocalScale: {x: 4.324183, y: 0.6048026, z: 0.22218}
+  m_LocalPosition: {x: 30.31, y: -1.0549, z: 0}
+  m_LocalScale: {x: 3.9140117, y: 0.6048026, z: 0.22218}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1273987945}
@@ -5787,7 +5787,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2034368657715806782, guid: 538dccf524b5ced468e21ccef6057a0a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.21
+      value: -2.28
       objectReference: {fileID: 0}
     - target: {fileID: 2034368657715806782, guid: 538dccf524b5ced468e21ccef6057a0a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6677,8 +6677,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1823484692}
   m_LocalRotation: {x: -0, y: -0, z: 0.70710707, w: 0.70710653}
-  m_LocalPosition: {x: 2.3444, y: -1.2246, z: 0}
-  m_LocalScale: {x: 4.2536097, y: 0.6048026, z: 0.22218}
+  m_LocalPosition: {x: 2.3444, y: -1.0497, z: 0}
+  m_LocalScale: {x: 3.903963, y: 0.6048026, z: 0.22218}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1273987945}
@@ -7238,7 +7238,7 @@ PrefabInstance:
     - target: {fileID: 4584486860893183464, guid: 28210df12b4360941b71ad627f2eadde, type: 3}
       propertyPath: inkJSON
       value: 
-      objectReference: {fileID: 4900000, guid: 99f3aa8787e9ba648a55f3bb2709c347, type: 3}
+      objectReference: {fileID: 4900000, guid: e20d4a68e2cf83c4da43ca0a947b6abc, type: 3}
     - target: {fileID: 4584486860893183464, guid: 28210df12b4360941b71ad627f2eadde, type: 3}
       propertyPath: HasExtra
       value: 1

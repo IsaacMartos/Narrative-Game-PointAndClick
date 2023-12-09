@@ -1,4 +1,4 @@
-Tienes una pinta horrible John#speaker:Charles #portrait:Charles_neutral #layout:R
+Tienes una pinta horrible John #speaker:Charles #portrait:Charles_neutral #layout:R
 
 ¿Qué quieres Charles? No estoy de humor para tus tonterías#speaker:John #portrait:SadJohn_neutral #layout:L
 
