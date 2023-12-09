@@ -1969,7 +1969,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &732252985
 Transform:
   m_ObjectHideFlags: 0
@@ -2244,7 +2244,7 @@ PrefabInstance:
     - target: {fileID: 4584486860893183464, guid: 28210df12b4360941b71ad627f2eadde, type: 3}
       propertyPath: inkJSON
       value: 
-      objectReference: {fileID: 4900000, guid: 5286f14007ef0004eb53ccfac50dcd6e, type: 3}
+      objectReference: {fileID: 4900000, guid: 4952eb6dd2958dc4fbd2dadb9229bb10, type: 3}
     - target: {fileID: 4584486860893183464, guid: 28210df12b4360941b71ad627f2eadde, type: 3}
       propertyPath: HasExtra
       value: 1
@@ -2274,10 +2274,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 870049807}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1fc111253fba68b499176f70689e2a32, type: 3}
+  m_Script: {fileID: 11500000, guid: f8ec52d84dd391e4b8ede0cd1318072d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Object: {fileID: 1576457004}
+  DeacivObject: {fileID: 732252984}
+  ActivObject: {fileID: 1576457004}
 --- !u!1001 &873092292
 PrefabInstance:
   m_ObjectHideFlags: 0
