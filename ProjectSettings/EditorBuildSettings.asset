@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Acto1/FinActo1CasaDetective.unity
     guid: 091c97265ce11254aa90750f5c61b206
+  - enabled: 1
+    path: Assets/Scenes/Acto2/InicioActo2.unity
+    guid: b9c34d8b9a527364696d31a295e56d7a
   m_configObjects: {}

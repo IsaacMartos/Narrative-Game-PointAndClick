@@ -1952,7 +1952,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 657826067}
-  NextScene: Acto2
+  NextScene: InicioActo2
 --- !u!1 &732252984
 GameObject:
   m_ObjectHideFlags: 0
@@ -5465,7 +5465,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 1914284657}
-  NextScene: CrimenCallejon
+  NextScene: InicioActo2
 --- !u!1 &1922971300
 GameObject:
   m_ObjectHideFlags: 0
