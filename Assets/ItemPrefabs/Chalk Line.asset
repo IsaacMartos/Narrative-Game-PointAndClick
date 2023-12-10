@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Chalk Line
   m_EditorClassIdentifier: 
   name: Silueta de tiza
-  description: 
-  image: {fileID: 0}
+  description: "Las marcas indican que el cuerpo se encontraba en posici\xF3n fetal.
+    Pero ya se lo han llevado."
+  image: {fileID: 21300000, guid: fabd74824c1558f419502f6d2917b526, type: 3}

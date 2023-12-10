@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Bloodstain
   m_EditorClassIdentifier: 
   name: Charco de sangre seca
-  description: 
-  image: {fileID: 0}
+  description: "Una gran mancha de sangre. Parece que la causa de la muerte fue el
+    desangramiento. La sangre ya est\xE1 seca."
+  image: {fileID: 21300000, guid: 0320bb77b5fec134188c68c3f0ce9180, type: 3}

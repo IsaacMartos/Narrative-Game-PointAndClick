@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2abeb84ba7fd355459e8a41f0b2ebaf2, type: 3}
-  m_Name: Ventena2
+  m_Name: Despertador 1
   m_EditorClassIdentifier: 
-  name: Ventana
-  description: "Es de noche, est\xE1 scuro."
-  image: {fileID: 21300000, guid: e9d080cce0540f14996e39c4223fc723, type: 3}
+  name: Despertador
+  description: El reloj marca las 23:58
+  image: {fileID: 21300000, guid: 17ac89cb9c7a90c459166ff10772acd2, type: 3}

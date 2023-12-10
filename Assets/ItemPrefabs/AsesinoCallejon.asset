@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2abeb84ba7fd355459e8a41f0b2ebaf2, type: 3}
   m_Name: AsesinoCallejon
   m_EditorClassIdentifier: 
-  name: 
-  description: 
-  image: {fileID: 0}
+  name: El asesino
+  description: "Una sombra que sale del callej\xF3n mientras esconde algo. Es dif\xEDcil
+    determinar la complexi\xF3n ya que lleva ropa holgada. Est\xE1 guardando un cuchillo
+    manchado de sangre en el bolsillo mientras huye de la escena."
+  image: {fileID: 21300000, guid: 962d93d667590444b86ee345a47c9944, type: 3}
