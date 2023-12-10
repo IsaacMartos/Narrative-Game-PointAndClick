@@ -754,7 +754,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 664808445}
-  NextScene: CrimenPuenteManhattan
+  NextScene: CrimeGraveyardSceneNoHability
 --- !u!1 &766052377
 GameObject:
   m_ObjectHideFlags: 0
