@@ -5259,7 +5259,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 1914284657}
-  NextScene: PoliceStationScene2
+  NextScene: PoliceStationScene
 --- !u!1 &1922971300
 GameObject:
   m_ObjectHideFlags: 0
@@ -5935,7 +5935,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1885965159091755719, guid: 561ad457c3d62d541ac77351c7ec0fd3, type: 3}
       propertyPath: NextScene
-      value: PoliceStationScene2
+      value: PoliceStationScene
       objectReference: {fileID: 0}
     - target: {fileID: 7138432740338914592, guid: 561ad457c3d62d541ac77351c7ec0fd3, type: 3}
       propertyPath: m_Name
