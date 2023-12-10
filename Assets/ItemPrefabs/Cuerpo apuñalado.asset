@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: "Cuerpo de v\xEDctima apu\xF1alado"
   description: "El cuerpo se encuentra boca arriba con la carta del as de picas clavada
-    en el pecho. Tabi\xE9n tiene un agujero de bala en la lumbar."
+    en el pecho. Tambi\xE9n tiene un agujero de bala en la lumbar."
   image: {fileID: 21300000, guid: b3a5b05843436554aa66bbe8a92a8e6e, type: 3}

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2abeb84ba7fd355459e8a41f0b2ebaf2, type: 3}
   m_Name: Cuerpo
   m_EditorClassIdentifier: 
-  name: Cuerpo fresco
+  name: Cuerpo
   description: "Se encuentra a la v\xEDctima tendida en el suelo, se observa una
     herida de bala en la lumbar del cuerpo."
   image: {fileID: 21300000, guid: 12514045cc1c42c48b9f9769a819edf1, type: 3}

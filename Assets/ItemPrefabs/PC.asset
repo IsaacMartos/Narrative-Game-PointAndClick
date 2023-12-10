@@ -15,4 +15,4 @@ MonoBehaviour:
   name: "Ordenador de la polic\xEDa"
   description: "La caja del ordenador emite un ru\xEDdo infernal mientras trabaja.
     Puede que sea tecnolog\xEDa punta, pero te pone de los nervios."
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: e6561881ebe1acf46bcffb1e865f3232, type: 3}
