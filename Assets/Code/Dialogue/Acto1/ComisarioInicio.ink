@@ -11,7 +11,7 @@ Es el cadáver de una chica. ¿Esto es tu idea de un regalo?#speaker:John
 
 Fíjate bien en la parte derecha.#speaker:Charles #portrait:Charles_neutral #layout:R
 
-… #speaker:John #portrait:SadJohn_surprised
+… #speaker:John #portrait:SadJohn_surprised #layout:L
 No puede ser.#speaker:John #layout:L
 Esa carta... Es la misma.#speaker:John #layout:L
 
