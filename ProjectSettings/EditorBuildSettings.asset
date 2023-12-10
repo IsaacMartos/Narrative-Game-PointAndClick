@@ -24,7 +24,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Acto3/AssassinHouse.unity
     guid: db648526281bfbb41aa60348e7afe3c7
   - enabled: 1
-    path: Assets/Scenes/Acto3/CrimeGraveyardScene.unity
+    path: Assets/Scenes/Acto3/CrimeGraveyardSceneNoHability.unity
     guid: 749af0ddaf28e854cb33fa506d2fd91e
   - enabled: 1
     path: Assets/Scenes/Acto3/PoliceStationScene.unity
