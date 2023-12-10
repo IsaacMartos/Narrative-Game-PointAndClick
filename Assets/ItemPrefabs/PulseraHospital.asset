@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2abeb84ba7fd355459e8a41f0b2ebaf2, type: 3}
+  m_Name: PulseraHospital
+  m_EditorClassIdentifier: 
+  name: Pulsera Hospital
+  description: "La pulsera, un peque\xF1o pero significativo objeto, act\xFAa como
+    un registro tangible de la vida de la v\xEDctima. Detalles cruciales est\xE1n
+    grabados en ella, revelando informaci\xF3n sobre la identidad de la persona,
+    el hospital al que estuvo vinculada y la hora en que abandon\xF3 esas paredes
+    m\xE9dicas."
+  image: {fileID: 21300000, guid: 6c40a9744bac9f943a268791a2c0e6af, type: 3}

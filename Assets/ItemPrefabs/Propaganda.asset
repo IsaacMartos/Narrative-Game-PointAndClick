@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2abeb84ba7fd355459e8a41f0b2ebaf2, type: 3}
+  m_Name: Propaganda
+  m_EditorClassIdentifier: 
+  name: "Propaganda de \u201CPrograma para j\xF3venes en riesgo\u201D"
+  description: "Al asesino se le cae la sobre un programa para j\xF3venes en riesgo,
+    lo que podr\xEDa dar lugar a que el asesino conozca a la v\xEDctima ese mismo
+    d\xEDa en el hospital."
+  image: {fileID: 0}
