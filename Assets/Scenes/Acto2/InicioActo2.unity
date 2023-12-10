@@ -1064,7 +1064,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 322982875}
-  NextScene: Acto2
+  NextScene: PoliceStationScene
 --- !u!1 &341977121
 GameObject:
   m_ObjectHideFlags: 0

@@ -20,4 +20,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Acto2/InicioActo2.unity
     guid: b9c34d8b9a527364696d31a295e56d7a
+  - enabled: 1
+    path: Assets/Scenes/Acto3/AssassinHouse.unity
+    guid: db648526281bfbb41aa60348e7afe3c7
+  - enabled: 1
+    path: Assets/Scenes/Acto3/CrimeGraveyardScene.unity
+    guid: 749af0ddaf28e854cb33fa506d2fd91e
+  - enabled: 1
+    path: Assets/Scenes/Acto3/PoliceStationScene.unity
+    guid: a3befc2e071138c44b1ad2ce5f694bef
   m_configObjects: {}
