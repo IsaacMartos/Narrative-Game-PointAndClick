@@ -13,9 +13,6 @@ MonoBehaviour:
   m_Name: PulseraHospital
   m_EditorClassIdentifier: 
   name: Pulsera Hospital
-  description: "La pulsera, un peque\xF1o pero significativo objeto, act\xFAa como
-    un registro tangible de la vida de la v\xEDctima. Detalles cruciales est\xE1n
-    grabados en ella, revelando informaci\xF3n sobre la identidad de la persona,
-    el hospital al que estuvo vinculada y la hora en que abandon\xF3 esas paredes
-    m\xE9dicas."
-  image: {fileID: 21300000, guid: 6c40a9744bac9f943a268791a2c0e6af, type: 3}
+  description: "Una pulsera con los datos de la v\xEDctima. Seg\xFAn esto, sali\xF3
+    del hospital a las 23:28."
+  image: {fileID: 21300000, guid: a9420a90a48e96a4298c04700574bb25, type: 3}

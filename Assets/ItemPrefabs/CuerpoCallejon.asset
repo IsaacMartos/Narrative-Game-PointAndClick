@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: CuerpoCallejon
   m_EditorClassIdentifier: 
   name: Cuerpo
-  description: Una chica joven, en los brazos tiene marcas de cortes. No son recientes
-    y parecen auto infligidos.
+  description: "Una chica joven, en los brazos tiene marcas de cortes. No son recientes
+    y parecen auto infligidos. Ha recibido una pu\xF1alada en el estomago mort\xE1l."
   image: {fileID: 21300000, guid: 10e1db8ad137e1a4490b6ff52ee65a29, type: 3}

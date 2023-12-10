@@ -10,8 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2abeb84ba7fd355459e8a41f0b2ebaf2, type: 3}
-  m_Name: Papeles
+  m_Name: "Cuerpo apu\xF1alado"
   m_EditorClassIdentifier: 
-  name: Papeles
-  description: "Una monta\xF1a de papeles. Parecen muy importantes."
-  image: {fileID: 0}
+  name: "Cuerpo de v\xEDctima apu\xF1alado"
+  description: "El cuerpo se encuentra boca arriba con la carta del as de picas clavada
+    en el pecho. Tabi\xE9n tiene un agujero de bala en la lumbar."
+  image: {fileID: 21300000, guid: b3a5b05843436554aa66bbe8a92a8e6e, type: 3}

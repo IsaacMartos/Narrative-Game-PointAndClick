@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Ventana
   m_EditorClassIdentifier: 
   name: Ventana
-  description: "Los rayos de sol del mediod\xEDa se filtran por las cortinas"
+  description: "Los rayos de sol del mediod\xEDa se filtran por las cortinas."
   image: {fileID: 21300000, guid: 0cd4c1836206a1549b20a3803b60280a, type: 3}

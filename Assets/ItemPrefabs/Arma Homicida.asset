@@ -15,4 +15,4 @@ MonoBehaviour:
   name: Arma homicida
   description: "Se ve como el asesino se guarda la pistola con la que disparo a la
     v\xEDctima por la espalda."
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: fc4532312ef989b4c82161210b4d0e4a, type: 3}

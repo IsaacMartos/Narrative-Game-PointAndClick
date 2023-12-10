@@ -1,5 +1,5 @@
-Se que no puedes dormir John.#speaker:Subconsciente #portrait:Subconsciente_neutral #layout:R
-Se que quieres...No.#speaker:Subconsciente
+Sé que no puedes dormir John.#speaker:Subconsciente #portrait:Subconsciente_neutral #layout:R
+Se que quieres... No.#speaker:Subconsciente
 Se que NECESITAS encontrar al asesino.#speaker:Subconsciente
 Vamos, tienes que seguir usando tu habilidad.#speaker:Subconsciente
 No podrás encontrarlo sin ella.#speaker:Subconsciente
@@ -10,8 +10,8 @@ Y la has roto. Hoy la has usado.#speaker:Subconsciente #portrait:Subconsciente_n
 
 No tenía otra opción, sin el cuerpo...#speaker:John #portrait:John_neutral #layout:L
 
-¡Excusas!#speaker:Subconsciente #portrait:Subconsciente_neutral #layout:R
-Vamos a vengarnos de ese hijo de puta aunque sea lo último que hagamos.#speaker:Subconsciente
+¡Excusas!#speaker:Subconsciente #portrait:Subconsciente_angy #layout:R
+Vamos a vengarnos de ese hijo de puta aunque sea lo último que hagamos.#speaker:Subconsciente #portrait:Subconsciente_angy #layout:R
 
 Pero si lo hago moriré, cada vez que la uso pierdo años de vida. Estoy usando tiempo prestado.#speaker:John #portrait:John_neutral #layout:L
 
@@ -24,4 +24,4 @@ Por William.#speaker:Subconsciente
 ...#speaker:John #portrait:John_neutral #layout:L
 
 Eso es.#speaker:Subconsciente #portrait:Subconsciente_neutral #layout:R
-Buenas noches John.#speaker:Subconsciente
+Buenas noches, John.#speaker:Subconsciente

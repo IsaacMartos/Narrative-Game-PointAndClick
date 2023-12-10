@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: "Ordenador de la polic\xEDa"
   description: "La caja del ordenador emite un ru\xEDdo infernal mientras trabaja.
-    Tecnolog\xEDa punta. La polic\xEDa est\xE1 empezando a digitalizarse. "
+    Puede que sea tecnolog\xEDa punta, pero te pone de los nervios."
   image: {fileID: 0}

@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Despertador
   m_EditorClassIdentifier: 
   name: Despertador
-  description: El reloj marca las 12:23 am
+  description: El reloj marca las 12:23 am.
   image: {fileID: 21300000, guid: 1126bec4361d88f44863fc0e5cebea90, type: 3}
