@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Papeles
   description: "Una monta\xF1a de papeles. Parecen muy importantes."
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: d105282867cf3894e83a99eca546d2bf, type: 3}

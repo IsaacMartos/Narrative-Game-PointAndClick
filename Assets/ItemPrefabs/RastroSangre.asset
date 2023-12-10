@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: RastroSangre
   m_EditorClassIdentifier: 
   name: Rastro Sangre
-  description: Rastro sangre de la victima
-  image: {fileID: 0}
+  description: "Rastro de sangre dejado por la v\xEDctima al arrastrarse por el suelo."
+  image: {fileID: 21300000, guid: caba5212a70f97a479f0f1fd85c50dda, type: 3}
