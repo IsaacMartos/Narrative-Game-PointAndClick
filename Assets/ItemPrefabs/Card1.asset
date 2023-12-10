@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Card1
   m_EditorClassIdentifier: 
   name: As de picas
-  description: Una carta de As de picas de una baraja normal
-  image: {fileID: 21300000, guid: 7ef5bd08ab1b3114ba514d2f53ac91fc, type: 3}
+  description: "Una carta de As de picas de una baraja normal. Est\xE1 manchada de
+    sange"
+  image: {fileID: 21300000, guid: d225ee432ccd01341b64b79655c8dc4d, type: 3}

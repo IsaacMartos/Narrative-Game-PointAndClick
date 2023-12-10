@@ -672,6 +672,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 212001208}
     m_Modifications:
     - target: {fileID: 912024811441237970, guid: 28210df12b4360941b71ad627f2eadde, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 912024811441237970, guid: 28210df12b4360941b71ad627f2eadde, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: ad0b9f1b04fab9248806f23cc047ed45, type: 3}
@@ -3374,7 +3378,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 912024811441237970, guid: 28210df12b4360941b71ad627f2eadde, type: 3}
       propertyPath: m_FlipX
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 912024811441237970, guid: 28210df12b4360941b71ad627f2eadde, type: 3}
       propertyPath: m_Sprite
