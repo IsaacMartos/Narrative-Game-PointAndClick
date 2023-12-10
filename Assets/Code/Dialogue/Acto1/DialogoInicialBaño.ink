@@ -1,4 +1,4 @@
-Bueno, bueno, mira quien se ha levantado. #speaker:Sombra en el espejo #portrait:Subconsciente_neutral #layout:R
+Bueno, bueno, mira quién se ha levantado. #speaker:Sombra en el espejo #portrait:Subconsciente_neutral #layout:R
 
 Agh… mi cabeza. ¿Qué se supone que es esto? #speaker:John #portrait:SadJohn_pain #layout:L
 
@@ -6,7 +6,7 @@ Agh… mi cabeza. ¿Qué se supone que es esto? #speaker:John #portrait:SadJohn_
 
 Déjate de juegos ¿Qué se supone que eres? #speaker:John #portrait:SadJohn_neutral #layout:L
 
-Yo soy tú #speaker:Sombra en el espejo #portrait:Subconsciente_neutral #layout:R
+Yo soy tú. #speaker:Sombra en el espejo #portrait:Subconsciente_neutral #layout:R
 Soy tu subconsciente John, estoy aquí para recordarte que sigues vivo. Algo sorprendente después de lo que has estado haciendo esta última semana. #speaker:Subconsciente
 
 Déjame en paz. #speaker:John #portrait:SadJohn_neutral #layout:L

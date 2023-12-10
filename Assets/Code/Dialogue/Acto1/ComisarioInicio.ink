@@ -1,6 +1,6 @@
-Tienes una pinta horrible John #speaker:Charles #portrait:Charles_neutral #layout:R
+Tienes una pinta horrible John. #speaker:Charles #portrait:Charles_neutral #layout:R
 
-¿Qué quieres Charles? No estoy de humor para tus tonterías#speaker:John #portrait:SadJohn_neutral #layout:L
+¿Qué quieres Charles? No estoy de humor para tus tonterías.#speaker:John #portrait:SadJohn_neutral #layout:L
 
 Vengo a darte algo que quizás te interesa.#speaker:Charles #portrait:Charles_neutral #layout:R
 
@@ -15,7 +15,7 @@ Fíjate bien en la parte derecha.#speaker:Charles #portrait:Charles_neutral #lay
 No puede ser.#speaker:John #layout:L
 Esa carta... Es la misma.#speaker:John #layout:L
 
-Se que aún es un poco pronto para volver, sobre todo después de que recursos humanos te apartara del caso. Pero te necesitamos. Y tú también lo necesitas#speaker:Charles #portrait:Charles_neutral #layout:R
+Sé que aún es un poco pronto para volver, sobre todo después de que recursos humanos te apartara del caso. Pero te necesitamos. Y tú también lo necesitas.#speaker:Charles #portrait:Charles_neutral #layout:R
 
 Gracias Charles.#speaker:John #portrait:SadJohn_neutral #layout:L
 

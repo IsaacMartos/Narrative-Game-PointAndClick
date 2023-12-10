@@ -12,10 +12,10 @@ Por la posición del cuerpo y la cantidad de sangre es seguro que murió desangr
 
 Se la llevó el asesino para no dejar evidencias.#speaker:John #portrait:John_neutral #layout:L
 
-Es probable pero...#speaker:Charles #portrait:Charles_neutral #layout:R
+Es probable, pero...#speaker:Charles #portrait:Charles_neutral #layout:R
 ¿Si no quería dejar pruebas por qué dejar la carta?#speaker:Charles #portrait:Charles_neutral #layout:R
 
-Es una marca, un mensaje.#speaker:John #portrait:John_neutral #layout:L
+Es un mensaje.#speaker:John #portrait:John_neutral #layout:L
 Hay que investigar más.#speaker:John 
 
 Mandaré la carta a analizar, quizás encontremos huellas. Ahora mismo cualquier hilo del que tirar será de gran ayuda.#speaker:Charles #portrait:Charles_neutral #layout:R
