@@ -2038,7 +2038,7 @@ PrefabInstance:
     - target: {fileID: 4584486860893183464, guid: 28210df12b4360941b71ad627f2eadde, type: 3}
       propertyPath: inkJSON
       value: 
-      objectReference: {fileID: 4900000, guid: 4952eb6dd2958dc4fbd2dadb9229bb10, type: 3}
+      objectReference: {fileID: 4900000, guid: 2e7b447227c205841b923cb074d7320b, type: 3}
     - target: {fileID: 4584486860893183464, guid: 28210df12b4360941b71ad627f2eadde, type: 3}
       propertyPath: HasExtra
       value: 1
