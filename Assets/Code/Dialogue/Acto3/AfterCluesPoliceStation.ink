@@ -7,7 +7,7 @@ Te cuento, Charles. Después de analizar estas últimas pistas del caso de Lorra
 
 ¿Esta chica también pertenecía al mismo grupo? #speaker:Charles #portrait:Charles_neutral #layout:R
 
-¡Bingo, Charles! Entonces, he pensado que si intento comunicarme con algunos del grupo para preguntar sobre las cartas, y ahí he dado con el punto clave de la investigación, ya que uno de los chicos me ha estado comentando que exactamente con esas mismas cartas solían jugar todos juntos de vez en cuando. #speaker:John #portrait:SadJohn_pain #layout:L
+¡Bingo, Charles! Entonces, he pensado que si intento comunicarme con algunos del grupo para preguntar sobre las cartas, y ahí he dado con el punto clave de la investigación, ya que uno de los chicos me ha estado comentando que exactamente con esas mismas cartas solían jugar todos juntos en el descanso del grupo de apoyo. #speaker:John #portrait:SadJohn_pain #layout:L
 
 Entonces, ¿supongo que te habrán dicho de quién son las cartas, verdad? #speaker:Charles #portrait:Charles_neutral #layout:R
 
@@ -15,7 +15,7 @@ Exacto, me han dicho que el chico de las cartas se llama Daniel Anderson. Así q
 
 ¿Y cómo puedes estar tan seguro de que esas cartas no sean de otra persona? #speaker:Charles #portrait:Charles_neutral #layout:R
 
-También había pensado en eso, y estuve investigando la procedencia de este tipo de cartas. Pregunté en tiendas y demás, y sólo las vendían en un sitio. Pregunté en el lugar a quién se las había vendido, y me dijo el de la tienda que era un chico con aspecto algo raro y que se llamaba Daniel. #speaker:John #portrait:SadJohn_pain #layout:L
+También había pensado en eso, y estuve investigando la procedencia de este tipo de cartas. Pregunté en tiendas y demás, y sólo las vendían en un sitio. Pregunté en el lugar a quién se las había vendido, y me dijo el de la tienda que era un chico con aspecto algo raro y que se llamaba Daniel. También me comentó que se llevó tres paquetes del mismo tipo de cartas y baraja. #speaker:John #portrait:SadJohn_pain #layout:L
 
 Lo tenemos de una vez por todas, sin ninguna duda es él. #speaker:Charles #portrait:Charles_neutral #layout:R
 

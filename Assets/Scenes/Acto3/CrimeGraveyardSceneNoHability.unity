@@ -187,7 +187,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NPCBefore: {fileID: 410380133}
   NPCAfter: {fileID: 1005117894}
-  totalClues: 8
+  totalClues: 4
   currentClues: 0
   cluesText: {fileID: 1433288294}
 --- !u!4 &20667356
