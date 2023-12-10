@@ -1,5 +1,5 @@
-Parece que ya has terminado de inspeccionar la escena. #speaker:Charles #portrait:Charles_neutral #layout:R
-¿Has visto algo interesante?#speaker:Charles #portrait:Charles_neutral #layout:R
+Parece que ya has terminado de inspeccionar la escena.#speaker:Charles #portrait:Charles_neutral #layout:R
+¿Has visto algo interesante? #speaker:Charles #portrait:Charles_neutral #layout:R
 
 El bolso de la chica.#speaker:John #portrait:John_neutral #layout:L
 Parecía tener marcas de cortes. Es probable que intentara defenderse.#speaker:John
@@ -8,11 +8,11 @@ Dices que la atacó con un arma blanca cortante.#speaker:Charles #portrait:Charl
 
 Por la posición del cuerpo y la cantidad de sangre es seguro que murió desangrada por una puñalada.#speaker:John #portrait:John_neutral #layout:L
 
-¿Pero entonces dónde está el arma homicida?#speaker:Charles #portrait:Charles_neutral #layout:R
+¿Pero entonces dónde está el arma homicida?#speaker:Charles #portrait:Charles_smoke #layout:R
 
 Se la llevó el asesino para no dejar evidencias.#speaker:John #portrait:John_neutral #layout:L
 
-Es probable pero...#speaker:Charles #portrait:Charles_smoke #layout:R
+Es probable pero...#speaker:Charles #portrait:Charles_neutral #layout:R
 ¿Si no quería dejar pruebas por qué dejar la carta?#speaker:Charles #portrait:Charles_neutral #layout:R
 
 Es una marca, un mensaje.#speaker:John #portrait:John_neutral #layout:L
