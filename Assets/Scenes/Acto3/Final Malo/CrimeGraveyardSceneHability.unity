@@ -23443,7 +23443,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8736004232769310690, guid: 7ac93e8ce271d8a44bfc17f2abd688e3, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8736004232769310693, guid: 7ac93e8ce271d8a44bfc17f2abd688e3, type: 3}
       propertyPath: NextRoom
