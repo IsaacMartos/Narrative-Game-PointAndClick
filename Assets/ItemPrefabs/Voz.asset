@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2abeb84ba7fd355459e8a41f0b2ebaf2, type: 3}
   m_Name: Voz
   m_EditorClassIdentifier: 
-  name: 
-  description: 
+  name: "Voz v\xEDctima"
+  description: "Se puede ver como la v\xEDctima susurra al aire con su \xFAltimo
+    aliento: \"\xBFPorqu\xE9 Daniel?\""
   image: {fileID: 0}

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2abeb84ba7fd355459e8a41f0b2ebaf2, type: 3}
   m_Name: Lorraine
   m_EditorClassIdentifier: 
-  name: 
-  description: 
+  name: Una chica
+  description: "Se puede observar como una chica est\xE1 tumbada boca arriba en el
+    callej\xF3n del cementerio. Esta chica se queda mirando hac\xEDa una tumba."
   image: {fileID: 0}

@@ -15,4 +15,4 @@ MonoBehaviour:
   name: "L\xEDquido extra\xF1o"
   description: "L\xEDquido extra\xF1o parecido a la baba pero con un color un poco
     distinto. Parece que ha sido expulsado por la v\xEDctima."
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 0320bb77b5fec134188c68c3f0ce9180, type: 3}

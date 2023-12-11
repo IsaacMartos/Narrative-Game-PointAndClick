@@ -15,4 +15,4 @@ MonoBehaviour:
   name: Bolsa con alcohol
   description: "Dentro de la bolsa se puede ver como quedan algunas botellas medio
     vac\xEDas."
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 452eb39a05e6ef745b4f21422a89629d, type: 3}
