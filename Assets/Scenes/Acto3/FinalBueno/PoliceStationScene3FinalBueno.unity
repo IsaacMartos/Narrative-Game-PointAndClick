@@ -1499,7 +1499,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 905801087}
-  NextScene: CrimenPuenteManhattan
+  NextScene: CrimeGraveyardSceneNoHability
 --- !u!1 &914375527
 GameObject:
   m_ObjectHideFlags: 0
@@ -3247,7 +3247,7 @@ PrefabInstance:
     - target: {fileID: 4584486860893183464, guid: 28210df12b4360941b71ad627f2eadde, type: 3}
       propertyPath: inkJSON
       value: 
-      objectReference: {fileID: 4900000, guid: 9648ce7d9411afe4aab69afc69ac7b73, type: 3}
+      objectReference: {fileID: 4900000, guid: fc6d0dedb93a8484e82784d31ec7dbda, type: 3}
     - target: {fileID: 4584486860893183464, guid: 28210df12b4360941b71ad627f2eadde, type: 3}
       propertyPath: hasExtra
       value: 1

@@ -1,0 +1,1 @@
+Ahora no Charles #speaker:John #portrait:SadJohn_old #layout:L
