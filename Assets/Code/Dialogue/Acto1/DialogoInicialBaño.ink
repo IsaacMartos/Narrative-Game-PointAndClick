@@ -1,3 +1,4 @@
+
 Bueno, bueno, mira quién se ha levantado. #speaker:Sombra en el espejo #portrait:Subconsciente_neutral #layout:R
 
 Agh… mi cabeza. ¿Qué se supone que es esto? #speaker:John #portrait:SadJohn_pain #layout:L
