@@ -15,4 +15,4 @@ MonoBehaviour:
   name: Pisadas de botas
   description: Se pueden observar las pisadas en barro de una botas. Probablemente
     sean las del asesino.
-  image: {fileID: 21300000, guid: caba5212a70f97a479f0f1fd85c50dda, type: 3}
+  image: {fileID: 21300000, guid: 5040655de59c7874aa8ee23c8d3ae275, type: 3}

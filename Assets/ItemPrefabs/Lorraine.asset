@@ -15,4 +15,4 @@ MonoBehaviour:
   name: Una chica
   description: "Se puede observar como una chica est\xE1 tumbada boca arriba en el
     callej\xF3n del cementerio. Esta chica se queda mirando hac\xEDa una tumba."
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 99499ff4217632049a58fcafe512956c, type: 3}

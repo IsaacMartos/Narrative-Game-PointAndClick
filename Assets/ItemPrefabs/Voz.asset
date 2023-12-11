@@ -15,4 +15,4 @@ MonoBehaviour:
   name: "Voz v\xEDctima"
   description: "Se puede ver como la v\xEDctima susurra al aire con su \xFAltimo
     aliento: \"\xBFPorqu\xE9 Daniel?\""
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: c3a01608c0df3bb45ad83c36cb5d4365, type: 3}

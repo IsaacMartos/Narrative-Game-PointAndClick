@@ -15,4 +15,4 @@ MonoBehaviour:
   name: Cuerpo
   description: Una chica joven se encuentra tumbada boca abajo. Parece que tiene
     algo de espuma saliendo por la boca.
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 99499ff4217632049a58fcafe512956c, type: 3}
