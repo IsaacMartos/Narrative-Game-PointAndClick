@@ -518,10 +518,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Tras el asesinato de Daniel Anderson, John muere de un ataque al coraz\xF3n
-    tras pegarle un tiro en la cabeza.\n\nJohn Steele es enterrado y el \xFAnico
-    que va al entierro es su \xFAnico amigo, el comisario Charles. \n\nEl resto de
-    la comisaria se muestra en desacuerdo con sus actos, no apoyan su venganza.\n"
+  m_text: "Tras acabar con la vida de Daniel Anderson, John Steele cae v\xEDctima
+    de un s\xFAbito ataque al coraz\xF3n, el peso emocional de su venganza finalmente
+    toma su peaje.\r\n\r\nEl funeral de John es \xEDntimo y sombr\xEDo, siendo el
+    comisario Charles su \xFAnico acompa\xF1ante en este \xFAltimo adi\xF3s. La escasa
+    asistencia destaca la brecha dejada por las decisiones pol\xE9micas de John.\n\nEn
+    la comisar\xEDa, la noticia de su muerte provoca una mezcla de emociones. Mientras
+    algunos lamentan su partida y reconocen sus intenciones, la mayor\xEDa critica
+    sus m\xE9todos, desatando controversia en torno a su legado. \n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
