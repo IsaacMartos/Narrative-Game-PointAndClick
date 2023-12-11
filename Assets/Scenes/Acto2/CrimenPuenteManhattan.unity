@@ -1599,8 +1599,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1667382767}
-  - {fileID: 1766704812}
   - {fileID: 1830334798}
+  - {fileID: 1766704812}
   - {fileID: 231168207}
   - {fileID: 135982192}
   m_Father: {fileID: 0}
@@ -5916,6 +5916,10 @@ PrefabInstance:
     - target: {fileID: 7138432740338914592, guid: 561ad457c3d62d541ac77351c7ec0fd3, type: 3}
       propertyPath: m_Name
       value: DebugNEXTSCENE
+      objectReference: {fileID: 0}
+    - target: {fileID: 7138432740338914592, guid: 561ad457c3d62d541ac77351c7ec0fd3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7138432740338914596, guid: 561ad457c3d62d541ac77351c7ec0fd3, type: 3}
       propertyPath: m_RootOrder
