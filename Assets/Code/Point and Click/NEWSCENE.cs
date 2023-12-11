@@ -20,4 +20,9 @@ public class NEWSCENE : MonoBehaviour
     {
         SceneManager.LoadScene("IntroCasaDetective");
     }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
 }
