@@ -1,7 +1,7 @@
 
 ¡ABRE LA MALDITA PUERTA, DANIEL! Sé todo lo que has hecho... #speaker:John #portrait:John_old #layout:L
 
-Daniel: ¿Quién es? No te conozco, ¿por qué debería abrirla? #speaker:Daniel #portrait:Daniel_neutral #layout:R
+¿Quién es? No te conozco, ¿por qué debería abrirla? #speaker:Daniel #portrait:Daniel_neutral #layout:R
 
 Soy el detective John Steele. Sé que fuiste tú quien asesinó a mi hijo y que estás detrás de los crímenes del As de Picas. Estás rodeado, y no hay escape. Abre la puerta y enfrenta las consecuencias capullo. #speaker:John #portrait:John_old #layout:L
 
