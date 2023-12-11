@@ -518,13 +518,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "[Texto del otro final donde John muere de un ataque al coraz\xF3n tras
-    pegarle un tiro en todo el craneo a Daniel] Tras el arresto de Daniel Anderson
-    se le sentencia en un juico a la pena de muerte, despu\xE9s de sus conocidos
-    cuatro asesinatos con el conocido alias del asesino del As de Picas.\n\nJohn
-    Steele el gran detective que pudo resolver el caso jugando su propia salud f\xEDsica
-    fue reconocido por el alcade de Nueva York, Henry Adams como el h\xE9roe de la
-    \xE9poca.\n"
+  m_text: "Tras el asesinato de Daniel Anderson, John muere de un ataque al coraz\xF3n
+    tras pegarle un tiro en la cabeza.\n\nJohn Steele es enterrado y el \xFAnico
+    que va al entierro es su \xFAnico amigo, el comisario Charles. \n\nEl resto de
+    la comisaria se muestra en desacuerdo con sus actos, no apoyan su venganza.\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
