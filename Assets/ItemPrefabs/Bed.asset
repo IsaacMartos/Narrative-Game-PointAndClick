@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Bed
   m_EditorClassIdentifier: 
   name: Cama
-  description: "Tu cama deshehca. Ahora mismo no parece muy c\xF3moda. Has dormido
-    suficiente."
+  description: "Tu cama est\xE1 deshecha. Ahora mismo no parece muy c\xF3moda. Has
+    dormido suficiente."
   image: {fileID: 21300000, guid: fe086fb6da1b5ca4aa0fdef70293e113, type: 3}
