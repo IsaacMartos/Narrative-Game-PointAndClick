@@ -2026,7 +2026,7 @@ GameObject:
   - component: {fileID: 847233847}
   - component: {fileID: 847233846}
   m_Layer: 0
-  m_Name: Bueno
+  m_Name: MALO
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2091,12 +2091,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 847233845}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.51, y: 0.46, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 0.70710677, w: 0.7071068}
+  m_LocalPosition: {x: 0.45999998, y: -0.74000025, z: 0}
   m_LocalScale: {x: 0.3966875, y: 0.3966875, z: 0.3966875}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1576457005}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &848868121
@@ -4450,7 +4450,7 @@ GameObject:
   - component: {fileID: 1490903526}
   - component: {fileID: 1490903525}
   m_Layer: 0
-  m_Name: Nuevo Lienzo
+  m_Name: BUENO
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4515,12 +4515,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1490903524}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.05, y: 0.22, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 0.70710677, w: 0.7071068}
+  m_LocalPosition: {x: 0.6999998, y: -3.2800002, z: 0}
   m_LocalScale: {x: 0.43431, y: 0.43431, z: 0.43431}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1576457005}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1510551142
@@ -4688,6 +4688,8 @@ Transform:
   - {fileID: 525614562}
   - {fileID: 1650445524}
   - {fileID: 1357960926}
+  - {fileID: 847233847}
+  - {fileID: 1490903526}
   m_Father: {fileID: 1510551143}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
