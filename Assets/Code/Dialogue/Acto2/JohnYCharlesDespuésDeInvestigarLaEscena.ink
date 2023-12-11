@@ -12,7 +12,7 @@ Joder, estás al tanto del programa. #speaker:Charles #portrait:Charles_smoke #l
 Sí... #speaker:John #portrait:John_neutral #layout:L
 Mi hijo acudía a ese programa. #speaker:John #portrait:John_neutral #layout:L
 
-John #speaker:Charles #portrait:Charles_neutral #layout:R
+John. #speaker:Charles #portrait:Charles_neutral #layout:R
 ¿Crees que este programa podría relacionar a las víctimas de estos últimos casos? #speaker:Charles #portrait:Charles_neutral #layout:R
 
 Sí, probablemente compartan asesino. #speaker:John #portrait:John_neutral #layout:L
