@@ -18,16 +18,16 @@ EditorBuildSettings:
     path: Assets/Scenes/Acto1/FinActo1CasaDetective.unity
     guid: 091c97265ce11254aa90750f5c61b206
   - enabled: 0
-    path: Assets/Scenes/Acto2/InicioActo2.unity
+    path: 
     guid: b9c34d8b9a527364696d31a295e56d7a
   - enabled: 1
-    path: Assets/Scenes/Acto3/AssassinHouseGoreEnding.unity
+    path: Assets/Scenes/Acto3/Final Malo/AssassinHouseGoreEnding.unity
     guid: db648526281bfbb41aa60348e7afe3c7
   - enabled: 1
-    path: Assets/Scenes/Acto3/CrimeGraveyardSceneNoHability.unity
+    path: Assets/Scenes/Acto3/FinalBueno/CrimeGraveyardSceneNoHability.unity
     guid: 749af0ddaf28e854cb33fa506d2fd91e
   - enabled: 1
-    path: Assets/Scenes/Acto3/PoliceStationScene.unity
+    path: 
     guid: a3befc2e071138c44b1ad2ce5f694bef
   - enabled: 1
     path: Assets/Scenes/Acto2/PoliceStationScene2.unity
@@ -38,4 +38,25 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Acto2/CrimenPuenteManhattan.unity
     guid: c9cd819bfe203cc4bbf598bc58d097ff
+  - enabled: 1
+    path: Assets/Scenes/Acto3/FinalBueno/Final Bueno.unity
+    guid: 856386d6641954c42b5856e062149a76
+  - enabled: 1
+    path: Assets/Scenes/Acto3/FinalBueno/PoliceStationScene3FinalBueno.unity
+    guid: 71b6b16ae8ba0d94d930d8850b1c3b0b
+  - enabled: 1
+    path: Assets/Scenes/Acto3/FinalBueno/AssassinHouseGoodEnding.unity
+    guid: 453eceeaf2bfda5418146d828a1b4f71
+  - enabled: 1
+    path: Assets/Scenes/Acto3/Final Malo/CrimeGraveyardSceneHability.unity
+    guid: 0a1a29f935e33f6438865da973548de4
+  - enabled: 1
+    path: Assets/Scenes/Acto3/Final Malo/Final Malo.unity
+    guid: 0808d301d64c61740978dea4c185573b
+  - enabled: 1
+    path: Assets/Scenes/Acto3/Final Malo/PoliceStationScene3 Final Malo.unity
+    guid: 43de862cb9c9bfd47a22150d23ca5130
+  - enabled: 1
+    path: "Assets/Scenes/Men\xFA Inicio.unity"
+    guid: 5aed8c9be74b9894aa1801df80ee0dbd
   m_configObjects: {}
