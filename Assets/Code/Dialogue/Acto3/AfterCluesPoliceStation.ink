@@ -16,7 +16,7 @@ Exacto, me han dicho que el chico de las cartas se llama Daniel Anderson. Así q
 ¿Y cómo puedes estar tan seguro de que esas cartas no sean de otra persona? #speaker:Charles #portrait:Charles_neutral #layout:R
 
 También había pensado en eso, y estuve investigando la procedencia de este tipo de cartas. Pregunté en tiendas y demás, y solo las vendían en un sitio.#speaker:John #portrait:John_old_pain #layout:L
-Pregunté en el lugar a quien se las había vendido, y me dijo el de la tienda que era un chico con aspecto algo raro y que se llamaba Daniel. También me comentó que se llevó tres paquetes del mismo tipo de cartas y baraja. #speaker:John #portrait:John_old_pain #layout:L
+Pregunté en el lugar a quien se las había vendido, y me dijo el de la tienda que era un chico con aspecto algo raro y que se llamaba Daniel. También me comentó que se llevó varios paquetes del mismo tipo de cartas. #speaker:John #portrait:John_old_pain #layout:L
 
 Lo tenemos de una vez por todas, sin ninguna duda es él. #speaker:Charles #portrait:John_old #layout:R
 
