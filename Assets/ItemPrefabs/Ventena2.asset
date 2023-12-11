@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Ventena2
   m_EditorClassIdentifier: 
   name: Ventana
-  description: "Es de noche, est\xE1 scuro."
+  description: "Es de noche, est\xE1 oscuro."
   image: {fileID: 21300000, guid: e9d080cce0540f14996e39c4223fc723, type: 3}
